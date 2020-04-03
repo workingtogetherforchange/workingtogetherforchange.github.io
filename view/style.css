@@ -6,6 +6,7 @@ h1,h4 { font-weight: 700; margin-bottom: 10px; }
 h2,h3 { font-weight: 300; color: #22A39F; }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
+h4 { font-size: 22px; }
 
 p.lead { text-align: center; color: #727878; }
 p.lead a { color: #FFFFFF; text-decoration: underline; }
@@ -141,6 +142,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 #projects .row > div { margin-bottom: 30px; }
 #projects figure { position: relative; overflow: hidden; }
 #projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
+#projects figure h4 { color: #FFF; font-weight: 400; margin-bottom: 5px; }
 #projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
 #projects figure img { width: 110%; }
 #projects figure figcaption {
@@ -177,7 +179,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	padding: 15px;
 }
 
-#contact { padding-bottom: 200px; }
+#contact { padding-bottom: 20px; }
 #contact h2, #contact .row * { color: #FFFFFF; }
 #contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
 #contact a .icon { float: left; margin-right: 20px; }
@@ -298,20 +300,20 @@ figure.effect figcaption {
 	text-align: left;
 }
 
-figure.effect h3 {
+figure.effect h4 {
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect:hover h3 {
+figure.effect:hover h4 {
 	opacity: 1;
 }
 
-figure.effect h3::after {
+figure.effect h4::after {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -325,13 +327,13 @@ figure.effect h3::after {
 	transform: translate3d(-100%,0,0);
 }
 
-figure.effect:hover h3::after {
+figure.effect:hover h4::after {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
 figure.effect p {
-	padding-top: 10px;
+	padding-top: 0px;
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
