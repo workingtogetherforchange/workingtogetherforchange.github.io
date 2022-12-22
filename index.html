@@ -50,21 +50,22 @@
 	<body data-spy="scroll" data-target="#navbar-example">	 
 				
         <!-- Front Page -->
-		<div id="top" class="jumbotron" data-src="/view/images/window_rain_animation.gif" data-position="bottom right">
-			<div class="container">
+		<!--
+        <div id="top" class="jumbotron" data-src="/view/images/window_rain_animation.gif" data-position="bottom right">
+			
+            <div class="container">
 				<h1>Nitish Sood</h1>
-				<p class="lead">About me <br>
-                <font size="-0.5">Our brightest dreams and our greatest fears are just over that horizon ~ Kent Nerburn</font> </p>
+				 <p class="lead">About me 
+                <br> <font size="-0.5">Our brightest dreams and our greatest fears are just over that horizon ~ Kent Nerburn</font> </p>
 			</div>
-			
+            
+            <!-- Adds light blue/cyan overlay on top of background picture --> <!--
 			<div class="overlay"></div>
-			
-			<a href="#profile" class="scroll-down">	
-				<span class="glyphicon glyphicon-chevron-down"></span>
-			</a>
-		</div>
 		
-        <!-- Navigation Bar on the right -->
+        </div>
+        -->
+        
+		 <!-- Navigation Bar on the right -->
 		<nav class="navbar navbar-default" id="navbar-example" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -79,41 +80,45 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#profile">Profile</a></li>
-					<li><a href="#research">Research</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-					<li><a href="#abilities">Awards</a></li>
+					<li class="active"><a href="#profile">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+					<li><a href="#research">Research</a></li>
+                    <li><a href="#abilities">Awards</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
-		
+        
         <!-- Profile -->
 		<div class="background-white">
 			<div id="profile" class="container">
-				<h2>Profile</h2>
+				<h2>About Me</h2>
+                <p class="lead">
+                &ldquo;"We are here to add what we can to life, not to get what we can from it". <br />~ William Osler </p>
                 <hr />
-
-                <script>
-                    let d = new Date();
-                    // alert("Today's date is " + d);
-                    //document.write("<p>Today's date is " + d + "</p>")
-                    
-                </script>
                 
+                <!-- Lets the navbar scroll down throughout the webpage -->
+               
+                <a href="#profile" class="scroll-down">	
+                   <!-- Button that was previously on Overview slide allowing you to quickly go to the next page - now obsolete -->
+                    <!-- <span class="glyphicon glyphicon-chevron-down"></span> -->
+                </a>
+
                 <div class="row">
-                    <div class="col-md-4">
-                        <h3>About me</h3>
-                        <p>
-                            &nbsp &nbsp &nbsp &nbsp I'm currently attending the Medical College of Georgia and am interested in doing residency in Ophthalmology. I'm currently focused on my research on Ophthalmology, COVID-19, and Emergency Medicine! In addition, I serve as Director of Finances for Feed the Frontlines GA, a nonprofit that provides fresh, local, and healthy food to healthcare professionals on the frontlines of COVID-19. </p>
+                    <div class="col-md-4 text-center">
+                        <img src="view/images/nitish_sood.png" alt="Nitish Sood" width="100" height="100" />
+                    </div>
+                    
+                    <div class="col-md-8">
+                        Hey there! I'm Nitish Sood, a medical student at the Medical College of Georgia, interested in doing residency in Ophthalmology. I'm currently focused on my research on Ophthalmology, COVID-19, and Emergency Medicine!
+                        <br> <br>
+                        In addition, I co-founded Working Together for Change, a national 501(c)3 nonprofit that aims to end homelessness, and serve as Director of Finances for Feed the Frontlines GA, a nonprofit that provides fresh, local, and healthy food to healthcare professionals on the frontlines of COVID-19.
                             <!-- I have worked since 2013 on my organization “Working Together for Change” aimed at ending homelessness and currently manage the Atlanta chapter of the organization while overseeing its operations nationwide. 
                             I'm currently also helping run HackStart, an organization aimed at promoting entrepreneurship and computer science among high school youth. -->	
                     </div>
-                    <div class="col-md-4 text-center">
-                        <br> <br> <br> 
-                        <img src="view/images/nitish_sood.png" alt="Nitish Sood" width="200" height="200" />
-                    </div>
+
+                    <!--
                     <div class="col-md-4">
                         <h3>Details</h3>
                         <p>
@@ -130,12 +135,11 @@
                             Atlanta, Georgia, United States, Earth<br />
                             <strong>Research Interests:</strong><br />
                             Immunology, Computational Genomics, Biomedical Device Construction, & Cardiovascular Genetics </p>
-                            -->
-                    <!--	<a href="https://twitter.com/adityasood8" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @adityasoood8</a> 
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
+                            --> <!--
                     </div>
+                    -->
                 </div>			
-        
+                    
                 <!-- Overview 
                 <h3 style="text-align: center;">Overview</h3>
                 <p class="lead">
@@ -158,77 +162,613 @@
             
         </div>
         
+       
+        
+        <!-- Projects -->
+        <div id="projects" class="container">
+                <h2>Projects</h2>
+                <p class="lead">
+                    &ldquo;You can do anything you set your mind to.&rdquo;<br />~ Benjamin Franklin </p>
+                <hr />
+
+                <!-- Projects -->
+                <div class="row">
+                    <h4><p style="text-align: center">Service Leadership</p></h4> <br>
+                    <!-- Working Together For Change -->
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_WTFC.png" alt="SOAP - Den Bosch" />
+
+                            <figcaption>
+                                <h4>Working Together for Change</h4>
+                                <p><font size="3">Founded 501(c)3 Nonprofit aimed at ending homelessness
+                                    </font></p>
+                                <a href="https://workingtogetherforchange.com" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div>
+                    
+                    
+                    <!-- Feed the frontlines  -->
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_Feedthefrontlines.png" alt="Feed the frontlines" />
+
+                            <figcaption>
+                                <h4>Feed the Frontlines</h4>
+                                <p>Director of Finance for nonprofit providing free meals to healthcare workers</p>
+                                <a href="https://www.FeedtheFrontlinesGA.org" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div>
+
+                    <!-- HackStart -->
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_HackStart.jpg" alt="Mals" />
+
+                            <figcaption>
+                                <h4>HackStart</h4>
+                                <p>Founded Organization promoting hackathon culture among teens in Atlanta</p>
+                                <a href="https://hackstart.me" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h4><p style="text-align: center">Technology & Innovation</p></h4> <br>
+                    <div class="col-md-2 col-sm-12 col-xs-12"> </div>
+
+                    <!-- InVenture Competition  -->
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_InVenture.png" alt="InVenture Prize" />
+
+                            <figcaption>
+                                <h4>InVenture Prize</h4>
+                                <p>Selected to compete in a state-wide business competition with a $20,000 prize</p>
+                                <a href="https://www.georgiainventureprize.org/2020competition" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div>
+
+                    <!-- CPR Manikin  -->
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_CPR.jpg" alt="CPR Manikin" />
+
+                            <figcaption>
+                                <h4>CPR Manikin</h4>
+                                <p>Invented a CPR Manikin to provide real-time feedback to trainees</p>
+                                <a href="https://digitalcommons.northgeorgia.edu/gurc/2019/MasterSchedule/54/" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h4><p style="text-align: center">Passion Projects</p></h4> <br>
+                    
+                    <!-- Posters at the Capitol  -->
+                    <!--
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_Capitol.png" alt="Posters at the Capitol" />
+
+                            <figcaption>
+                                <h4>Posters at the Capitol</h4>
+                                <p>Chosen to present my research to State Congressional Representatives </p>
+                                <a href="https://www.georgiainventureprize.org/2020competition" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div> -->
+
+                    <!-- TedX Talk -->
+                    <div class="col-md-4  col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_TED.jpg" alt="Ted Talk" />
+
+                            <figcaption>
+                                <h4>TedX Talk</h4>
+                                <p>Presented about my nonprofit at the Atlanta Beltline TedX</p>
+                                <a href="https://www.youtube.com/watch?v=tAbsvshIGk8" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div>
+
+                    <!-- Taido Karate  -->
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_Taido.jpg" alt="Taido Karate" />
+
+                            <figcaption>
+                                <h4>Taido Karate</h4>
+                                <p>11 years of practicing, learning, and eventually mentoring Taido Karate</p>
+                                <a href="https://www.taidokarate.com" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div>
+
+                    <!-- FCYC  -->
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="view/images/Projects_FCYC.png" alt="Fulton County Youth Commission" />
+
+                            <figcaption>
+                                <h4>Fulton County Youth Commission</h4>
+                                <p>Worked with Fulton County Elected Officials to target key issues like including education & hunger</p>
+                                <a href="https://www.fultoncountyga.gov/services/youth/youth-commission" target="_blank">View more</a>
+                                <span class="icon">
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </span>
+                            </figcaption> 
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        
+         <!-- Slideshow container -->
+        <h3> <p style="text-align: center">See Some Recent Research Highlights Below! </p></h3>
+        <div style="max-width:1000px;min-width:250px;position:relative;margin:auto;">
+
+        <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <div style="text-align: center;"> 
+                        <img src="view/images/Research_Dad_PCA.jpeg" style="height:50%;width:50%">
+                      </div>
+                    <div class="captionText">
+                        <b>Figure 2. FDA approach toward predictive functional clustering.</b> <br>
+                        Kumar, V., Sood, A., Gupta, S., & Sood, N. (2021). Prevention- Versus Promotion-Focus Regulatory Efforts on the Disease Incidence and Mortality of COVID-19: A Multinational Diffusion Study Using Functional Data Analysis. Journal of International Marketing, 29(1), 1–22. https://doi.org/10.1177/1069031X20966563
+                    </div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <div style="text-align: center;"> 
+                        <img src="view/images/Research_ECPR.png" style="height:50%;width:50%">
+                      </div>
+                    <div class="captionText"><b>Supplemental Figure 3. Overall survival (A) Results of pooled survival analysis (B) Funnel plot with Egger’s test</b> <br>
+                        Sood, Nitish BS,; Sangari, Anish BS; Goyal, Arnav BS; Conway, J. Arden S. MD. Predictors of survival for pediatric extracorporeal cardiopulmonary resuscitation: A systematic review and meta-analysis. Medicine 101(39):p e30860, September 30, 2022. | DOI: 10.1097/MD.0000000000030860 
+                    </div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <div style="text-align: center;"> 
+                        <img src="view/images/Research_Ophtho_Marcus.png" style="height:50;width:50%">
+                      </div>
+                    <div class="captionText"> <b>Figure 2. BCVA changes over 152 weeks. </b> <br>
+                        Kasetty, V; Starnes, D; Sood, N; Qin, L; Moses, M; Frazier, H; Singh, H; Marcus, D. Complications, Compliance and 3-Year Outcomes after Endolaserless Vitrectomy with Aflibercept Monotherapy for Proliferative Diabetic Retinopathy-Related Vitreous Hemorrhage. OSLI Retina. Published ahead of print.
+                    </div>
+                  </div>
+        </div>
+        
+        <div style="text-align:center">
+          <a href="javascript:void(0)" class="dot" onclick="currentSlide(1)" title="slide 1"></a> 
+          <a href="javascript:void(0)" class="dot slideractive" onclick="currentSlide(2)" title="slide 2"></a> 
+          <a href="javascript:void(0)" class="dot" onclick="currentSlide(3)" title="slide 3"></a> 
+          <a href="javascript:void(0)" class="dot" onclick="currentSlide(4)" title="slide 4"></a> 
+        </div>
+        
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}
+              slides[slideIndex-1].style.display = "block";
+              setTimeout(showSlides, 5000); // Change image every 2 seconds
+            } 
+        </script>
+        
+        <!-- Experiences -->
+	   <div class="background-white">	
+           <div id="experiences" class="container">
+            <h2>Experiences</h2>
+            <p class="lead">
+                &ldquo;Tell me what you pay attention to and I will tell you who you are.&rdquo;<br />~ José Ortega y Gasset </p>
+            <hr />
+
+                <h3>Education</h3>
+                <div class="experiences">			
+
+                    <div class="experience row">
+                        <div class="col-md-3">
+                            <h4>Medical College of Georgia</h4>
+                            <p class="experience-period">
+                                Aug 2020 - May 2024 </p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                <strong>Medical Student</strong>
+                                <span class="hidden-phone">
+                                    <p> </p>
+                                </span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                                        Augusta	
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="experience row">
+                        <div class="col-md-3">
+                            <h4>Augusta University</h4>
+                            <p class="experience-period">
+                                Aug 2017 -  May 2020 </p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                <strong>Bachelor of Science in Cellular & Molecular Biology</strong>
+                                <span class="hidden-phone">
+                                    <p> 4.0 GPA </p>
+                                        <!-- I have a 4.0 GPA and will be graduating Augusta University with a degree in Cellular & Molecular Biology in 3 years. In this time, I've explored medical interests by shadowing various specialities, done research in varying areas including Immunology, Computational Genomics, & Emergency Medicine, and served as Augusta University's representative in state-wide business competitions showcasing products I invented. </p> -->
+                                    <p> Scholarships: Presidential Scholar (Full Scholarship); Coca-Cola Scholar ($20,000); National Merit Scholar; Carson Scholar</p>
+                                </span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                                        Augusta	</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience row">
+                        <div class="col-md-3">
+                            <h4>Alpharetta High School</h4>
+                            <p class="experience-period">
+                                Aug 2013 - May 2017 </p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                <strong>High School Diploma</strong>
+                                <span class="hidden-phone"> 4.0 GPA
+                                    <!-- I graduated Alpharetta High, where I enjoyed doing science, math, biology and arts. I realized in my second year of school that I wanted to do something in medicine so I began increasing my knowledge of the field through various internships and research. -->				</span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                                        Alpharetta	</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <hr />
+
+                <h3>Social Activism</h3>
+                <div class="experiences">
+
+                    <div class="experience row">
+                        <div class="col-md-3">
+                            <h4>Feed the Frontlines GA</h4>
+                            <p class="experience-period">
+                                Apr 2020 - Oct 2020 </p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                <strong>Director of Finance</strong>
+                                <span class="hidden-phone">
+                                    Feed the Frontlines GA aims to provide fresh and healthy food to healthcare professionals in hospitals hit hardest by the COVID-19 pandemic. To support local businessnes, all of our meals come from local restaurants. As Director of Finance, I led all fundraising initiatives, oversaw all accounting & economic aspects, and managed a fundraising team.
+                                    <b>Meals Delivered: </b>6,800+; <b>Raised: </b>~$100,000. Worked with hospitals & restaurants in Atlanta, Athens, Augusta, Macon, Savannah, and Albany.
+                                </span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        GA					</span>
+                                <span class="seperator">|</span>
+                                    <span class="link">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                        <a href="https://FeedtheFrontlinesGA.org/" target="_blank">FeedtheFrontlinesGA.org</a>
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience row">
+                        <div class="col-md-3">
+                            <h4>Working Together for Change</h4>
+                            <p class="experience-period">
+                                2013 - Present </p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                <strong>Executive Director</strong>
+                                <span class="hidden-phone">
+                                    I co-founded and manage Working Together for Change, a national 501(c)3 nonprofit dedicated to ending homelessness. I manage the operations of chapters across the country, while also running the local activities of the Atlanta chapter.  WTFC has now mobilized 600+ volunteers for 3,000+ homeless over 17,000 service hours!			</span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        Atlanta					</span>
+                                <span class="seperator">|</span>
+                                    <span class="link">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                        <a href="https://workingtogetherforchange.com/" target="_blank">WorkingTogetherForChange.com/</a>
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience row">
+                        <div class="col-md-3">
+                            <h4>HackStart</h4>
+                            <p class="experience-period">
+                                Jul 2015 - Jul 2017	</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                <strong>Co-Founder</strong>
+                                <span class="hidden-phone">
+                                    I co-founded HackStart in order to promote digital literacy among teenagers in Atlanta.	We have fundraised $5,000+, helping 300+ students learn programming from experienced mentors and professionals	</span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        Atlanta					</span>
+                                    <span class="seperator">|</span>
+                                    <span class="link">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                        <a href="http://HackStart.me/" target="_blank">HackStart.me/</a>
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>	
+
+                    <!-- 
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Beta Club</h4>
+                            <p class="experience-period">
+                                May 2016				- 
+                                Present			</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>Vice President</strong>
+                                <span class="hidden-phone">
+                                    I help manage Beta Club, the largest volunteer club at Alpharetta High (140+ members). I coordinate group events (40-50 volunteers) with outside nonprofits and businesses for our members and ensure smooth overall running of the club. 	</span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        Atlanta					</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>          -->
+              </div>
+              <hr />
+              
+              <!-- 
+              <h3>Leadership</h3>
+              
+              <div class="experiences">
+                  <div class="experience row">
+                        <div class="col-md-3">
+                            <h4>Ambassador, Center of Undergraduate Research & Scholarship</h4>
+                            <p class="experience-period">
+                                2013 - Present </p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                <strong>Director of Finance</strong>
+                                <span class="hidden-phone">
+                                    Feed the Frontlines GA aims to provide fresh and healthy food to healthcare professionals in hospitals hit hardest by the COVID-10 pandemic. To support local businessnes, all of our meals come from local restaurants. We have delivered/scheduled ~2,000 meals to hospitals in Atlanta, Athens, Augusta, Macon, Savannah, and Albany. As the Director of Finance, I led all fundraising initiatives, oversaw all accounting & economic aspects, and managed a team of 5 people. We raised $15,000+ in the first three weeks.
+                                </span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        GA					</span>
+                                <span class="seperator">|</span>
+                                    <span class="link">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                        <a href="https://FeedtheFrontlinesGA.org/" target="_blank">FeedtheFrontlinesGA.org</a>
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+              </div>
+                -->
+
+                <!-- Political Activism -->
+                <!--
+                <h3>Political Activism</h3>
+                <div class="experiences">
+
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Fulton County Youth Commission</h4>
+                            <p class="experience-period">
+                                2014				- 
+                                Present			</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>Social Progress Committee Chair</strong>
+                                <span class="hidden-phone">
+                                    I serve as the Chair of the Social Progress Committee, heading efforts to address issues including poverty, homelessness, health, and legislation concerning youth and those in need. This year, we have distributed 4000+ HOPE boxes filled with food, water, hygiene kits, and a resource card detailing nearly shelters and soup kitchens. 				</span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        Atlanta					</span>
+
+
+                                    <span class="seperator">|</span>
+                                    <span class="link">
+                                        <span class="glyphicon glyphicon-link"></span>
+
+                                    </span>
+
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Metropolitan Atlanta Regional Commission</h4>
+                            <p class="experience-period">
+                                May 2015				- 
+                                Present			</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>Regional Commisssioner</strong>
+                                <span class="hidden-phone">
+                                    We focus on promoted the youth voice within our government. This year, we pushed Georgia House Resolution 1078, raising the high school dropout age from 16 to 17 and advocated for and succeeded in creating a bipartisan study committee on the high school dropout age. 			</span>
+                                <span class="experience-details">
+                                    <span class="location">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        Atlanta					</span>
+
+
+                                    <span class="seperator">|</span>
+                                    <span class="link">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                    </span>
+
+
+                                </span>
+                            </p>
+                        </div>
+                    </div> 
+                </div> -->						
+            </div>
+        </div>
+        
         <!-- Research -->
-        <div id="research" class="container">
+        <div id="research">
+            <div class="container">
             <h2>Research</h2>
             <p class="lead">
                 &ldquo;Tell me what you pay attention to and I will tell you who you are.&rdquo;<br />~ José Ortega y Gasset </p>
             <hr />
             
             <!-- Publications -->
-            <h3 style="text-align: center"> Publications (6)</h3> <br />
+            <h3 style="text-align: center"> Publications</h3> <br />
             <div class="row">
                 <ol>
                     <!-- <b>First or Second Author</b> -->
-                    <li> <u>Sood N</u>, Sangari A, Goyal A, Conway JA. <i>“Predictors of Survival for Pediatric Extracorporeal Cardiopulmonary Resuscitation: A Systematic Review and Meta-analysis”.</i> Medicine. October 2022. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/36181012/" target="_blank">36181012</a> </li>
-                    <li> Reddy VP, Seas A, Sood N, Srinivasan VM, Catapano JS, Lawton MT. <i>"Evolution of Intracranial-Intracranial Bypass Surgery: A Bibliometric Analysis".</i> World Neurosurg. 2022;162:177-182.e9. doi:10.1016/j.wneu.2022.02.116 </li>
-                    <li> Reddy V, <u>Sood N</u>, Hua J, Kaplan J, Postoev A, Ibikunle C. <i>"Impact of Price Transparency on Patient Relationships in an Outpatient Surgical Center".</i> Journal on Surgery. March 2020. Available <a href="http://www.journalonsurgery.org/pdf/1001.pdf" target="_blank">here:</a></li> 
-                    <li> Reddy V, <u>Sood N</u>, Hua J, Ibikunle C. <i>“A Retrospective Analysis of Weight Loss Associated with the ORBERA Intragastric Balloon at a Single Bariatric Center”.</i> Global Surgery. March 2020. doi: <a href="https://www.oatext.com/a-retrospective-analysis-of-weight-loss-associated-with-the-orbera-intragastric-balloon-at-a-single-bariatric-center.php" target="_blank">10.15761/GOS.1000217</a> </li>
-                    <!-- <br><b>Third Author or More</b> -->
-                    <li> Vikas K, Ashish S, Shaphali G, <u>Nitish S</u>. <i>"Prevention vs. Promotion-Focus Regulatory Efforts on the Disease Incidence and Mortality of COVID-19: A Multinational Diffusion Study using Functional Data Analysis".</i> Journal of International Marketing. October 2020. doi: <a href="https://journals.sagepub.com/doi/abs/10.1177/1069031X20966563" target ="_blank">10.1177/1069031X20966563</a></li>
-                    <li> Vamsi R, Clive M, <u>Nitish S</u>, Benjamin D S. <i>"High-risk Neuroblastoma Predisposing to Osteomyelitis: A Case Study".</i> Surgical Medicine Open Access Journal. November 2020. doi: <a href="https://crimsonpublishers.com/smoaj/pdf/SMOAJ.000570.pdf" target ="_blank">10.31031/SMOAJ.2020.03.000570</a></li>
+                    Predictors of Survival for Pediatric Extracorporeal Cardiopulmonary Resuscitation: A Systematic Review and Meta-analysis<br>
+                    <p style="font-size:13px;color:gray"> <u>Sood N</u>, Sangari A, Goyal A, Conway JA. <br>
+                        Medicine. October 2022. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/36181012/" target="_blank">36181012</a> </p> 
+                    
+                    Evolution of Intracranial-Intracranial Bypass Surgery: A Bibliometric Analysis<br>
+                    <p style="font-size:13px;color:gray"> Reddy VP, Seas A, Sood N, Srinivasan VM, Catapano JS, Lawton MT. <br> World Neurosurg. 2022;162:177-182.e9. doi:10.1016/j.wneu.2022.02.116 </p>
+                        
+                    Impact of Price Transparency on Patient Relationships in an Outpatient Surgical Center <br>
+                    <p style="font-size:13px;color:gray"> Reddy V, <u>Sood N</u>, Hua J, Kaplan J, Postoev A, Ibikunle C. <br> Journal on Surgery. March 2020. Available <a href="http://www.journalonsurgery.org/pdf/1001.pdf" target="_blank">here:</a></p>
+                    
+                    A Retrospective Analysis of Weight Loss Associated with the ORBERA Intragastric Balloon at a Single Bariatric Center <p style="font-size:13px;color:gray"> Reddy V, <u>Sood N</u>, Hua J, Ibikunle C. <br> Global Surgery. March 2020. doi: <a href="https://www.oatext.com/a-retrospective-analysis-of-weight-loss-associated-with-the-orbera-intragastric-balloon-at-a-single-bariatric-center.php" target="_blank">10.15761/GOS.1000217</a> </p>
+                    
+                    Prevention vs. Promotion-Focus Regulatory Efforts on the Disease Incidence and Mortality of COVID-19: A Multinational Diffusion Study using Functional Data Analysis <br>
+                    <p style="font-size:13px;color:gray"> Vikas K, Ashish S, Shaphali G, <u>Nitish S</u>. <br> Journal of International Marketing. October 2020. doi: <a href="https://journals.sagepub.com/doi/abs/10.1177/1069031X20966563" target ="_blank">10.1177/1069031X20966563</a> </p>
+                    
+                    High-risk Neuroblastoma Predisposing to Osteomyelitis: A Case Study <br>
+                        <p style="font-size:13px;color:gray"> Vamsi R, Clive M, <u>Nitish S</u>, Benjamin D S. <br> Surgical Medicine Open Access Journal. November 2020. doi: <a href="https://crimsonpublishers.com/smoaj/pdf/SMOAJ.000570.pdf" target ="_blank">10.31031/SMOAJ.2020.03.000570</a> </p>
                 </ol>
             </div>
             
             <!-- Publications Accepted Ahead of Press -->
-            <h3 style="text-align: center"> Publications Accepted Ahead of Press (2)</h3> <br />
+            <h3 style="text-align: center"> Publications Accepted Ahead of Press </h3> <br />
             <div class="row">
                 <ol>
-                    <li> V Kasetty, D Starnes, M Moses, <u>N Sood</u>, et al. <i>Complications, Compliance and 3-Year Outcomes after Endolaserless Vitrectomy with Aflibercept Monotherapy for Proliferative Diabetic Retinopathy-Related Vitreous Hemorrhage</i>. Under Review at OSLI Retina. </li>
-                    <li> A Soni, A Yekula, Y Singh, <u>N Sood</u>, et al. <i>Influence of Non-Alcoholic Fatty Liver Disease (NAFLD) on Non-Variceal Upper Gastrointestinal Bleeding Hospitalizations (NVUGIB) in the United States: A nationwide analysis</i>. Under Review at World Journal of Hepatology. </li>
+                    Complications, Compliance and 3-Year Outcomes after Endolaserless Vitrectomy with Aflibercept Monotherapy for Proliferative Diabetic Retinopathy-Related Vitreous Hemorrhage <br>
+                    <p style="font-size:13px;color:gray"> V Kasetty, D Starnes, M Moses, <u>N Sood</u>, et al. <br>
+                        Under Review at OSLI Retina. </p>
+                    Influence of Non-Alcoholic Fatty Liver Disease (NAFLD) on Non-Variceal Upper Gastrointestinal Bleeding Hospitalizations (NVUGIB) in the United States: A nationwide analysis <br>
+                    <p style="font-size:13px;color:gray"> A Soni, A Yekula, Y Singh, <u>N Sood</u>, et al. <br> Under Review at World Journal of Hepatology. </p>
                 </ol>
             </div>
             
             <!-- Publications Under Review -->
-            <h3 style="text-align: center"> Publications Under Review (3)</h3> <br />
+            <h3 style="text-align: center"> Publications Under Review </h3> <br />
             <div class="row">
                 <ol>
-                    <li> <u>N Sood</u>, et al. <i>Impact of In-hospital Statin Use on Mortality in COVID-19 Patients from a Majority African American Population</i>. Under Review at Journal of Heart & Lung. </li>
-                    <li> G Tellis, A Sood, <u>N Sood</u>, S Nair. <i>The Cost and Benefits of Lockdowns in Response to COVID-19: Learnings from a Natural Experiment across United States</i>. Under Review at Journal of Public Policy and Marketing.</li>
-                    <li> A Sangari, A Sood, M Horinek, A Sangari, <u>N Sood</u>, et al. <i>Identifying the Privacy Risks of Semi-Anonymous Online Medical Forums: Content Analysis</i>. Under Review at JMIR Infodemiology </li>
+                    Impact of In-hospital Statin Use on Mortality in COVID-19 Patients from a Majority African American Population <br>
+                    <p style="font-size:13px;color:gray"> <u>N Sood</u>, et al. <br> Under Review at Journal of Heart & Lung. </p>
+
+                    The Cost and Benefits of Lockdowns in Response to COVID-19: Learnings from a Natural Experiment across United States <br> <p style="font-size:13px;color:gray"> G Tellis, A Sood, <u>N Sood</u>, S Nair. <br> Under Review at Journal of Public Policy and Marketing.</p>
+
+                    Identifying the Privacy Risks of Semi-Anonymous Online Medical Forums: Content Analysis <br>
+                    <p style="font-size:13px;color:gray"> A Sangari, A Sood, M Horinek, A Sangari, <u>N Sood</u>, et al. <br> Under Review at JMIR Infodemiology </p>
+                    
                 </ol>
             </div>
             
             <!-- Published Abstracts -->
-            <h3 style="text-align: center"> Published Abstracts (8)</h3> <br />
+            <h3 style="text-align: center"> Published Abstracts </h3> <br />
             <div class="row">
                 <ol>
-                    <b>First Author</b>
-                    <li> <u>Nitish S</u>, Anish S, Joseph H. <i>Comparing the Efficacy of Real-Time Audiovisual Feedback Devices and Active Compression-Decompression Devices in Out-of-Hospital Cardiac Arrest: A Network Meta-Analysis</i> (November 2020). Circulation. </li>
-                    <li> <u>Nitish S</u>, R. Crepeau, & M. Ford. <i>Role of CD28 Signaling on T cell Phenotype following Lymphodepletion and Homeostatic Reconstitution</i> (April 2020). Journal of the Federation of American Societies for Experimental Biology. <a href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2020.34.s1.09243" target="_blank"> doi.org/10.1096/fasebj.2020.34.s1.09243</a> </li>
-                    <li> <u>Nitish S</u>, Gerry T, Ashish S. <i>How Long Should Social Distancing Last? Predicting Time to Moderation, Control, and Containment of COVID-19</i> (June 2020). M. Science. Abstract available <a href="view/images/M Science 2020 Abstracts.pdf" target="_blank"> here</a>. </li>
-                    <li> <u>Nitish S</u>, Mehul M, Anav M, Christopher B. <i> Sequence Analysis of Homologous Alu Elements: A Novel Methodology for Primate Phylogenetic Tree Construction </i> (April 2020). Federation of American Societies for Experimental Biology. <a href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2020.34.s1.09578" target="_blank"> doi.org/10.1096/fasebj.2020.34.s1.09578 </a></li> 
+                    <b>First Author</b> <br>
+                    Comparing the Efficacy of Real-Time Audiovisual Feedback Devices and Active Compression-Decompression Devices in Out-of-Hospital Cardiac Arrest: A Network Meta-Analysis <br>
+                    <p style="font-size:13px;color:gray"> <u>Nitish S</u>, Anish S, Joseph H. <br> November 2020. Circulation. </p>
+
+                    Role of CD28 Signaling on T cell Phenotype following Lymphodepletion and Homeostatic Reconstitution <br>
+                    <p style="font-size:13px;color:gray"> <u>Nitish S</u>, R. Crepeau, & M. Ford. <br> April 2020. Journal of the Federation of American Societies for Experimental Biology. <a href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2020.34.s1.09243" target="_blank"> doi.org/10.1096/fasebj.2020.34.s1.09243</a> </p>
+
+                    How Long Should Social Distancing Last? Predicting Time to Moderation, Control, and Containment of COVID-19 <br>
+                    <p style="font-size:13px;color:gray"> <u>Nitish S</u>, Gerry T, Ashish S. <br> June 2020. M. Science. Abstract available <a href="view/images/M Science 2020 Abstracts.pdf" target="_blank"> here</a>. </p>
+
+                    Sequence Analysis of Homologous Alu Elements: A Novel Methodology for Primate Phylogenetic Tree Construction <br>
+                    <p style="font-size:13px;color:gray"> <u>Nitish S</u>, Mehul M, Anav M, Christopher B. <br> April 2020. Federation of American Societies for Experimental Biology. <a href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2020.34.s1.09578" target="_blank"> doi.org/10.1096/fasebj.2020.34.s1.09578 </a></p>
                     
-                    <br><b>Second Author</b>        
-                    <li> Anish S, <u>Nitish S</u>, Joseph H. <i>Quantifying the Effect of Technological Advancements and Guidelines on Pediatric Extracorporeal Cardiopulmonary Resuscitation Survival Outcomes</i> (November 2020). Circulation. </li>  
-                    <li> Mehul M, <u>Nitish S</u>, Anav M, Christopher B. <i>Using Alu Elements to Identify Orthologous Chromosomes Across Primates</i> (April 2020). Journal of the Federation of American Societies for Experimental Biology. <a href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2020.34.s1.09934" target="_blank"> doi.org/10.1096/fasebj.2020.34.s1.09934</a> </li>
-                    <li> Ashish S, <u>Nitish S</u>, Gerry T. <i>Why Did US Governors Delay Lockdowns Against COVID-19? Disease Penetration vs Learning, Cascades, and Political Polarization</i> (June 2020). M. Science. Abstract available <a href="view/images/M Science 2020 Abstracts.pdf" target="_blank"> here</a>. </li>
+                    <b>Second Author</b> <br>       
+                    Quantifying the Effect of Technological Advancements and Guidelines on Pediatric Extracorporeal Cardiopulmonary Resuscitation Survival Outcomes <br>
+                    <p style="font-size:13px;color:gray"> Anish S, <u>Nitish S</u>, Joseph H. <br> November 2020. Circulation. </p>
+
+                    Using Alu Elements to Identify Orthologous Chromosomes Across Primates <br>
+                    <p style="font-size:13px;color:gray"> Mehul M, <u>Nitish S</u>, Anav M, Christopher B. <br> April 2020. Journal of the Federation of American Societies for Experimental Biology. <a href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2020.34.s1.09934" target="_blank"> doi.org/10.1096/fasebj.2020.34.s1.09934</a> </p>
+
+                    Why Did US Governors Delay Lockdowns COVID-19? Disease Penetration vs Learning, Cascades, and Political Polarization <br>
+                    <p style="font-size:13px;color:gray"> Ashish S, <u>Nitish S</u>, Gerry T. <br> June 2020. M. Science. Abstract available <a href="view/images/M Science 2020 Abstracts.pdf" target="_blank"> here</a>. </p>
                     
-                    <br><b>Third Author or More</b>
-                    <li> Gerry T, Ashish S, <u>Nitish S</u>. <i>Price of Delay in COVID-19 Lockdowns: Delays Spike Total Cases, Natural Experiments Reveal</i> (June 2020). M. Science. Abstract available <a href="view/images/M Science 2020 Abstracts.pdf" target="_blank"> here</a>. </li>
+                    <br><b>Third Author or More</b> <br>
+                    Price of Delay in COVID-19 Lockdowns: Delays Spike Total Cases, Natural Experiments Reveal <br>
+                    <p style="font-size:13px;color:gray"> Gerry T, Ashish S, <u>Nitish S</u>. <br> June 2020. M. Science. Abstract available <a href="view/images/M Science 2020 Abstracts.pdf" target="_blank"> here</a>. </p>
                     
                 </ol>
             </div>
             
-            <!-- Working Papers -->
-            <h3 style="text-align: center"> Working Papers (3)</h3> <br />
-            <div class="row">
-                <ol>
-                    <li> Gerry T, Ashish S, <u>Nitish S</u>. <i>Price of Delay in COVID-19 Lockdowns: Delays Spike Total Cases, Natural Experiments Reveal</i> (May 4, 2020). Available at SSRN: <a href="http://dx.doi.org/10.2139/ssrn.3575004" target="_blank"> dx.doi.org/10.2139/ssrn.3592912</a> </li>
-                    <li> Gerry T, <u>Nitish S</u>, Ashish S. <i>Why Did US Governors Delay Lockdowns Against COVID-19? Disease Penetration vs Learning, Cascades, and Political Polarization</i> (April 13, 2020). Available at SSRN: <a href="http://dx.doi.org/10.2139/ssrn.3575004" target="_blank"> doi.org/10.2139/ssrn.3575004</a> </li>
-                    <li> Gerry T, Ashish S, <u>Nitish S</u>. <i>How Long Should Social Distancing Last? Predicting Time to Moderation, Control, and Containment of COVID-19</i> (March 28, 2020). Available at SSRN: <a href="http://dx.doi.org/10.2139/ssrn.3562996" target="_blank"> dx.doi.org/10.2139/ssrn.3562996</a> </li>
-                </ol>
-            </div>
             <!-- Media Coverage -->
             <h3 style="text-align: center"> Media Coverage</h3> <br />
             <div class="row">
@@ -422,298 +962,11 @@
             </div> 
             
         </div>
-        
-        <!-- Experiences -->
-		<div class="background-white">
-		  <div id="experiences" class="container">
-                <h2>Experiences</h2>
-            <p class="lead">
-                &ldquo;Tell me what you pay attention to and I will tell you who you are.&rdquo;<br />~ José Ortega y Gasset </p>
-            <hr />
-
-                <!--<div class="alert alert-danger">
-                    <strong>Looking for an awesome new challenge somewhere in the neighborhood of Den Bosch or Amsterdam as a Creative PHP Web Developer. </strong>
-                </div>-->
-
-                <h3>Education</h3>
-                <div class="experiences">			
-
-                    <div class="experience row">
-                        <div class="col-md-3">
-                            <h4>Medical College of Georgia</h4>
-                            <p class="experience-period">
-                                Aug 2020 - May 2024 </p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Medical Student</strong>
-                                <span class="hidden-phone">
-                                    <p> </p>
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                                        Augusta	
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="experience row">
-                        <div class="col-md-3">
-                            <h4>Augusta University</h4>
-                            <p class="experience-period">
-                                Aug 2017 -  May 2020 </p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Bachelor of Science in Cellular & Molecular Biology</strong>
-                                <span class="hidden-phone">
-                                    <p> 4.0 GPA </p>
-                                        <!-- I have a 4.0 GPA and will be graduating Augusta University with a degree in Cellular & Molecular Biology in 3 years. In this time, I've explored medical interests by shadowing various specialities, done research in varying areas including Immunology, Computational Genomics, & Emergency Medicine, and served as Augusta University's representative in state-wide business competitions showcasing products I invented. </p> -->
-                                    <p> Scholarships: Presidential Scholar (Full Scholarship); Coca-Cola Scholar ($20,000); National Merit Scholar; Carson Scholar</p>
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                                        Augusta	</span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="experience row">
-                        <div class="col-md-3">
-                            <h4>Alpharetta High School</h4>
-                            <p class="experience-period">
-                                Aug 2013 - May 2017 </p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>High School Diploma</strong>
-                                <span class="hidden-phone"> 4.0 GPA
-                                    <!-- I graduated Alpharetta High, where I enjoyed doing science, math, biology and arts. I realized in my second year of school that I wanted to do something in medicine so I began increasing my knowledge of the field through various internships and research. -->				</span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                                        Alpharetta	</span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <hr />
-
-                <h3>Social Activism</h3>
-                <div class="experiences">
-
-                    <div class="experience row">
-                        <div class="col-md-3">
-                            <h4>Feed the Frontlines GA</h4>
-                            <p class="experience-period">
-                                Apr 2020 - Oct 2020 </p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Director of Finance</strong>
-                                <span class="hidden-phone">
-                                    Feed the Frontlines GA aims to provide fresh and healthy food to healthcare professionals in hospitals hit hardest by the COVID-19 pandemic. To support local businessnes, all of our meals come from local restaurants. We have delivered/scheduled ~2,000 meals to hospitals in Atlanta, Athens, Augusta, Macon, Savannah, and Albany. As the Director of Finance, I led all fundraising initiatives, oversaw all accounting & economic aspects, and managed a team of 5 people. We raised $78,000.
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        GA					</span>
-                                <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                        <a href="https://FeedtheFrontlinesGA.org/" target="_blank">FeedtheFrontlinesGA.org</a>
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="experience row">
-                        <div class="col-md-3">
-                            <h4>Working Together for Change</h4>
-                            <p class="experience-period">
-                                2013 - Present </p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Executive Director</strong>
-                                <span class="hidden-phone">
-                                    I co-founded and manage Working Together for Change, a national 501(c)3 nonprofit dedicated to ending homelessness. I manage the operations of chapters across the country, while also running the local activities of the Atlanta chapter.  WTFC has now mobilized 600+ volunteers for 3,000+ homeless over 17,000 service hours!			</span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Atlanta					</span>
-                                <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                        <a href="https://workingtogetherforchange.com/" target="_blank">WorkingTogetherForChange.com/</a>
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="experience row">
-                        <div class="col-md-3">
-                            <h4>HackStart</h4>
-                            <p class="experience-period">
-                                Jul 2015 - Jul 2017	</p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Co-Founder</strong>
-                                <span class="hidden-phone">
-                                    I co-founded HackStart in order to promote digital literacy among teenagers in Atlanta.	We have fundraised $5,000+, helping 300+ students learn programming from experienced mentors and professionals	</span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Atlanta					</span>
-                                    <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                        <a href="http://HackStart.me/" target="_blank">HackStart.me/</a>
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>	
-
-                    <!-- 
-                    <div class="experience row">
-                        <div class="col-md-4">
-                            <h4>Beta Club</h4>
-                            <p class="experience-period">
-                                May 2016				- 
-                                Present			</p>
-                        </div>
-                        <div class="col-md-8">
-                            <p>
-                                <strong>Vice President</strong>
-                                <span class="hidden-phone">
-                                    I help manage Beta Club, the largest volunteer club at Alpharetta High (140+ members). I coordinate group events (40-50 volunteers) with outside nonprofits and businesses for our members and ensure smooth overall running of the club. 	</span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Atlanta					</span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>          -->
-              </div>
-              <hr />
-              
-              <!-- 
-              <h3>Leadership</h3>
-              
-              <div class="experiences">
-                  <div class="experience row">
-                        <div class="col-md-3">
-                            <h4>Ambassador, Center of Undergraduate Research & Scholarship</h4>
-                            <p class="experience-period">
-                                2013 - Present </p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Director of Finance</strong>
-                                <span class="hidden-phone">
-                                    Feed the Frontlines GA aims to provide fresh and healthy food to healthcare professionals in hospitals hit hardest by the COVID-10 pandemic. To support local businessnes, all of our meals come from local restaurants. We have delivered/scheduled ~2,000 meals to hospitals in Atlanta, Athens, Augusta, Macon, Savannah, and Albany. As the Director of Finance, I led all fundraising initiatives, oversaw all accounting & economic aspects, and managed a team of 5 people. We raised $15,000+ in the first three weeks.
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        GA					</span>
-                                <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                        <a href="https://FeedtheFrontlinesGA.org/" target="_blank">FeedtheFrontlinesGA.org</a>
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-              </div>
-                -->
-
-                <!-- Political Activism -->
-                <!--
-                <h3>Political Activism</h3>
-                <div class="experiences">
-
-                    <div class="experience row">
-                        <div class="col-md-4">
-                            <h4>Fulton County Youth Commission</h4>
-                            <p class="experience-period">
-                                2014				- 
-                                Present			</p>
-                        </div>
-                        <div class="col-md-8">
-                            <p>
-                                <strong>Social Progress Committee Chair</strong>
-                                <span class="hidden-phone">
-                                    I serve as the Chair of the Social Progress Committee, heading efforts to address issues including poverty, homelessness, health, and legislation concerning youth and those in need. This year, we have distributed 4000+ HOPE boxes filled with food, water, hygiene kits, and a resource card detailing nearly shelters and soup kitchens. 				</span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Atlanta					</span>
-
-
-                                    <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-
-                                    </span>
-
-
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="experience row">
-                        <div class="col-md-4">
-                            <h4>Metropolitan Atlanta Regional Commission</h4>
-                            <p class="experience-period">
-                                May 2015				- 
-                                Present			</p>
-                        </div>
-                        <div class="col-md-8">
-                            <p>
-                                <strong>Regional Commisssioner</strong>
-                                <span class="hidden-phone">
-                                    We focus on promoted the youth voice within our government. This year, we pushed Georgia House Resolution 1078, raising the high school dropout age from 16 to 17 and advocated for and succeeded in creating a bipartisan study committee on the high school dropout age. 			</span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Atlanta					</span>
-
-
-                                    <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                    </span>
-
-
-                                </span>
-                            </p>
-                        </div>
-                    </div> 
-                </div> -->						
-            </div>
         </div>
-        
-        <!-- Test hard left
-        <h3>Testing</h3>
-        <div>Testing</div> -->
 		
-        <!-- Awards  -->
-		<div id = abilities class="container">
+        <!-- Awards / abilities -->
+		<div class="background-white">	
+            <div id = abilities class="container">
             <h2>Awards </h2>
             <p class="lead">
                 &ldquo;Life without knowledge is death in disguise.&rdquo;<br />~ Talib Kweli
@@ -760,174 +1013,9 @@
                 </div>  
             </div>
         </div>
+        </div>
         
-        <!-- Projects -->
-		<div class="background-white">
-            <div id="projects" class="container">
-                <h2>Projects</h2>
-                <p class="lead">
-                    &ldquo;You can do anything you set your mind to.&rdquo;<br />~ Benjamin Franklin </p>
-                <hr />
-
-                <!-- Projects -->
-                <div class="row">
-
-                    <!-- Working Together For Change -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_WTFC.png" alt="SOAP - Den Bosch" />
-
-                            <figcaption>
-                                <h4>Working Together for Change</h4>
-                                <p><font size="3">Founded 501(c)3 Nonprofit aimed at ending homelessness
-                                    </font></p>
-                                <a href="https://workingtogetherforchange.com" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
-                    <!-- HackStart -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_HackStart.jpg" alt="Mals" />
-
-                            <figcaption>
-                                <h4>HackStart</h4>
-                                <p>Founded Organization promoting hackathon culture among teens in Atlanta</p>
-                                <a href="https://hackstart.me" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
-                    <!-- TedX Talk -->
-                    <div class="col-md-4  col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_TED.jpg" alt="Ted Talk" />
-
-                            <figcaption>
-                                <h4>TedX Talk</h4>
-                                <p>Presented about my nonprofit at the Atlanta Beltline TedX</p>
-                                <a href="https://www.youtube.com/watch?v=tAbsvshIGk8" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
-                </div>
-                <div class="row">
-
-                    <div class="col-md-2 col-sm-12 col-xs-12">
-                    </div>
-
-                    <!-- InVenture Competition  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_InVenture.png" alt="InVenture Prize" />
-
-                            <figcaption>
-                                <h4>InVenture Prize</h4>
-                                <p>Selected to compete in a state-wide business competition with a $20,000 prize</p>
-                                <a href="https://www.georgiainventureprize.org/2020competition" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
-                    <!-- CPR Manikin  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_CPR.jpg" alt="CPR Manikin" />
-
-                            <figcaption>
-                                <h4>CPR Manikin</h4>
-                                <p>Invented a CPR Manikin to provide real-time feedback to trainees</p>
-                                <a href="https://digitalcommons.northgeorgia.edu/gurc/2019/MasterSchedule/54/" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
-                </div>
-                <div class="row">
-
-                    <!-- Posters at the Capitol  
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_Capitol.png" alt="Posters at the Capitol" />
-
-                            <figcaption>
-                                <h4>Posters at the Capitol</h4>
-                                <p>Chosen to present my research to State Congressional Representatives </p>
-                                <a href="https://www.georgiainventureprize.org/2020competition" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div> -->
-
-                    <!-- Feed the frontlines  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_Feedthefrontlines.png" alt="Feed the frontlines" />
-
-                            <figcaption>
-                                <h4>Feed the Frontlines</h4>
-                                <p>Director of Finance for nonprofit providing free meals to healthcare workers</p>
-                                <a href="https://www.FeedtheFrontlinesGA.org" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
-                    <!-- Taido Karate  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_Taido.jpg" alt="Taido Karate" />
-
-                            <figcaption>
-                                <h4>Taido Karate</h4>
-                                <p>11 years of practicing, learning, and eventually mentoring Taido Karate</p>
-                                <a href="https://www.taidokarate.com" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
-                    <!-- FCYC  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_FCYC.png" alt="Fulton County Youth Commission" />
-
-                            <figcaption>
-                                <h4>Fulton County Youth Commission</h4>
-                                <p>Worked with Fulton County Elected Officials to target key issues like including education & hunger</p>
-                                <a href="https://www.fultoncountyga.gov/services/youth/youth-commission" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-                </div>
-            </div>
-		</div>
+        
         
         <!-- Contact -->
 		<div class="background-gray">
