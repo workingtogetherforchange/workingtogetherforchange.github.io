@@ -6,7 +6,7 @@ h1,h4 { font-weight: 700; margin-bottom: 10px; }
 h2,h3 { font-weight: 300; color: #22A39F; }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
-h4 { font-size: 22px; }
+h4 { font-size: 20px; }
 
 p.lead { text-align: center; color: #727878; }
 p.lead a { color: #FFFFFF; text-decoration: underline; }
@@ -257,6 +257,12 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
     }
 	
 	.jumbotron .lead { display: none; }
+}
+
+@media (max-width: 630px) {
+  #profile .contact-images a {
+    display: block;
+  }
 }
 
 @keyframes wiggle {

@@ -1,3 +1,14 @@
+<!-- TODO
+- Fix the About Me description on mobile
+- Animate the slideshow
+- Make the Experiences, education section less white text
+- Have the experiences non-education section description text appear on mobile
+- Make additional research experience collapsable
+- Decrease size of contact footer, maybe add something?
+- Standardize text font/size/color
+- Change FCYC Passion Project
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -5,7 +16,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="content-script-type" content="text/javascript" />
 		<meta http-equiv="content-style-type" content="text/css" />
-		<meta http-equiv="content-language" content="nl" />
+		<!-- <meta http-equiv="content-language" content="nl" /> -->
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
@@ -43,7 +54,7 @@
 				}else{
 					window.addEventListener('load', __ldinsp, false);
 				}
-			})();
+			})();    
 		</script>
 		<!-- End Inspectlet Embed Code -->
 	</head>
@@ -107,7 +118,7 @@
                 <!-- Photo & Description -->
                 <div class="row">
                     <div class="col-md-4 text-center">
-                        <img src="view/images/nitish_sood.png" alt="Nitish Sood" width="100" height="100" />
+                        <img src="view/images/nitish_sood.png" alt="Nitish Sood" style="width:75%" />
                     </div>
                     
                     <div class="col-md-8">
@@ -141,32 +152,27 @@
                 </div>			
                 
                 <!-- Contact Info -->
-                
-                <div class="row">
-                    <!-- Empty to move everything to the right -->
-                    <div class="col-md-1" style="margin:0px;padding:0px"> </div> 
-                    <!-- Google Scholar -->
-                    <div class="col-md-3" style="margin:0px">
-                        <p style="text-align: right; margin:0px"> <a href="https://scholar.google.com/citations?user=4F8FhwMAAAAJ&hl=en&oi=ao">
+                <div class="row contact-images">
+                    <!-- to center-align the contact info, use display:flex; justify-content: center; in the style of the col-md-12 div" -->
+                    <div class="col-md-12" style="text-align: right; margin:0px; padding:0px;">                     
+                        <!-- Google Scholar --> 
+                        <a href="https://scholar.google.com/citations?user=4F8FhwMAAAAJ&hl=en&oi=ao">
                             <!-- <font size = "4"> <i class="ai ai-google-scholar-square ai-2x"></i> </font> -->
-                            <img src="view/images/Logo_GoogleScholar.svg" alt2= "Google Scholar Logo" style="height: 40x; width: 40px; margin: 8px;border-radius: 0%">Google Scholar</a> </p> </div>
-                    <!-- Linkedin -->
-                    <div class="col-md-2" style="margin:0px;padding:0px"> 
-                        <p style="text-align: right; margin:0px"><a href="https://Linkedin.com/in/thenitishsood/" target="_blank">
-                            <img src="view/images/Logo_LinkedIn.png" alt = "LinkedIn Logo" style="height: 40px; width: 40px; margin: 10px;border-radius: 0%">LinkedIn</a> </p> </div>
-                    <!-- SSRN -->
-                    <div class="col-md-2" style="margin:0px">
-                        <p style="text-align: right; margin:0px"><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4080366" target="_blank">
-                            <img src="view/images/Logo_SSRN.svg" alt = "SSRN Logo" style="height: 40px; width: 40px; margin: 10px;border-radius: 0%">SSRN</a> </p> </div>
-                    <!-- Gmail -->
-                    <div class="col-md-2" style="margin:0px">
-                        <p style="text-align: left; margin:0px"><a href="mailto:Nitish.Sood1@gmail.com">
-                            <img src="view/images/Logo_Gmail.svg" alt = "Gmail Logo" style="height: 40px; width: 40px; margin: 10px;border-radius: 0%">Email</a> </p> </div>
-                    <!-- ORCID -->
-                    <div class="col-md-2" style="margin:0px"> 
-                        <p style="text-align: left; margin:0px"> <a href="https://orcid.org/0000-0003-1516-0691">
+                            <img src="view/images/Logo_GoogleScholar.svg" alt2= "Google Scholar Logo" style="height: 40x; width: 40px; margin: 8px;border-radius: 0%">Google Scholar</a> 
+                        <!-- Linkedin -->
+                        <a href="https://Linkedin.com/in/thenitishsood/" target="_blank">
+                            <img src="view/images/Logo_LinkedIn.png" alt = "LinkedIn Logo" style="height: 40px; width: 45px; margin: 10px;border-radius: 0%">LinkedIn</a> 
+                        <!-- SSRN -->
+                        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4080366" target="_blank">
+                            <img src="view/images/Logo_SSRN.svg" alt = "SSRN Logo" style="height: 40px; width: 40px; margin: 10px;border-radius: 0%">SSRN</a>
+                        <!-- Gmail -->
+                        <a href="mailto:Nitish.Sood1@gmail.com">
+                            <img src="view/images/Logo_Gmail.svg" alt = "Gmail Logo" style="height: 40px; width: 40px; margin: 10px;border-radius: 0%">Email</a>
+                        <!-- ORCID -->
+                        <a href="https://orcid.org/0000-0003-1516-0691">
                             <!-- <font size = "4"> <i class="ai ai-google-scholar-square ai-2x"></i> </font> -->
-                            <img src="view/images/Logo_ORCID.svg" alt2= "ORCID Logo" style="height: 40x; width: 40px; margin: 8px;border-radius: 0%">ORCID</a> </p> </div>
+                            <img src="view/images/Logo_ORCID.svg" alt2= "ORCID Logo" style="height: 40x; width: 40px; margin: 8px;border-radius: 0%">ORCID</a>
+                    </div> 
                 </div>                
                 
                 <!-- Overview 
@@ -190,176 +196,178 @@
             </div>
             
         </div>
-        
-       
-        
+         
         <!-- Projects -->
         <div id="projects" class="container">
-                <h2>Projects</h2>
-                <p class="lead">
-                    &ldquo;You can do anything you set your mind to.&rdquo;<br />~ Benjamin Franklin </p>
-                <hr />
+            <h2>Projects</h2>
+            <p class="lead">
+                &ldquo;You can do anything you set your mind to.&rdquo;<br />~ Benjamin Franklin </p>
+            <hr />
 
-                <!-- Projects -->
-                <div class="row">
-                    <h4><p style="text-align: center">Service Leadership</p></h4> <br>
-                    <!-- Working Together For Change -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_WTFC.png" alt="SOAP - Den Bosch" />
+            <!-- Service Leadership -->
+            <div class="row">
+                <h3><p style="text-align: center">Service Leadership</p></h3> <br>
+                <!-- Working Together For Change -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_WTFC.png" alt="SOAP - Den Bosch" />
 
-                            <figcaption>
-                                <h4>Working Together for Change</h4>
-                                <p><font size="3">Founded 501(c)3 Nonprofit aimed at ending homelessness
-                                    </font></p>
-                                <a href="https://workingtogetherforchange.com" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-                    
-                    
-                    <!-- Feed the frontlines  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_Feedthefrontlines.png" alt="Feed the frontlines" />
-
-                            <figcaption>
-                                <h4>Feed the Frontlines</h4>
-                                <p>Director of Finance for nonprofit providing free meals to healthcare workers</p>
-                                <a href="https://www.FeedtheFrontlinesGA.org" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
-                    <!-- HackStart -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_HackStart.jpg" alt="Mals" />
-
-                            <figcaption>
-                                <h4>HackStart</h4>
-                                <p>Founded Organization promoting hackathon culture among teens in Atlanta</p>
-                                <a href="https://hackstart.me" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
+                        <figcaption>
+                            <h4>Working Together for Change</h4>
+                            <p><font size="3">Founded 501(c)3 Nonprofit aimed at ending homelessness
+                                </font></p>
+                            <a href="https://workingtogetherforchange.com" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
                 </div>
-                <div class="row">
-                    <h4><p style="text-align: center">Technology & Innovation</p></h4> <br>
-                    <div class="col-md-2 col-sm-12 col-xs-12"> </div>
 
-                    <!-- InVenture Competition  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_InVenture.png" alt="InVenture Prize" />
 
-                            <figcaption>
-                                <h4>InVenture Prize</h4>
-                                <p>Selected to compete in a state-wide business competition with a $20,000 prize</p>
-                                <a href="https://www.georgiainventureprize.org/2020competition" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
+                <!-- Feed the frontlines  -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_Feedthefrontlines.png" alt="Feed the frontlines" />
 
-                    <!-- CPR Manikin  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_CPR.jpg" alt="CPR Manikin" />
-
-                            <figcaption>
-                                <h4>CPR Manikin</h4>
-                                <p>Invented a CPR Manikin to provide real-time feedback to trainees</p>
-                                <a href="https://digitalcommons.northgeorgia.edu/gurc/2019/MasterSchedule/54/" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
-
+                        <figcaption>
+                            <h4>Feed the Frontlines</h4>
+                            <p>Director of Finance for nonprofit providing free meals to healthcare workers</p>
+                            <a href="https://www.FeedtheFrontlinesGA.org" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
                 </div>
-                <div class="row">
-                    <h4><p style="text-align: center">Passion Projects</p></h4> <br>
-                    
-                    <!-- Posters at the Capitol  -->
-                    <!--
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_Capitol.png" alt="Posters at the Capitol" />
 
-                            <figcaption>
-                                <h4>Posters at the Capitol</h4>
-                                <p>Chosen to present my research to State Congressional Representatives </p>
-                                <a href="https://www.georgiainventureprize.org/2020competition" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div> -->
+                <!-- HackStart -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_HackStart.jpg" alt="Mals" />
 
-                    <!-- TedX Talk -->
-                    <div class="col-md-4  col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_TED.jpg" alt="Ted Talk" />
+                        <figcaption>
+                            <h4>HackStart</h4>
+                            <p>Founded Organization promoting hackathon culture among teens in Atlanta</p>
+                            <a href="https://hackstart.me" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
+                </div>
 
-                            <figcaption>
-                                <h4>TedX Talk</h4>
-                                <p>Presented about my nonprofit at the Atlanta Beltline TedX</p>
-                                <a href="https://www.youtube.com/watch?v=tAbsvshIGk8" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
+            </div>
+            
+            <!-- Technology & Innovation -->
+            <div class="row">
+                <h3><p style="text-align: center">Technology & Innovation</p></h3> <br>
+                <div class="col-md-2 col-sm-12 col-xs-12"> </div>
 
-                    <!-- Taido Karate  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_Taido.jpg" alt="Taido Karate" />
+                <!-- InVenture Competition  -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_InVenture.png" alt="InVenture Prize" />
 
-                            <figcaption>
-                                <h4>Taido Karate</h4>
-                                <p>11 years of practicing, learning, and eventually mentoring Taido Karate</p>
-                                <a href="https://www.taidokarate.com" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
+                        <figcaption>
+                            <h4>InVenture Prize</h4>
+                            <p>Selected to compete in a state-wide business competition with a $20,000 prize</p>
+                            <a href="https://www.georgiainventureprize.org/2020competition" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
+                </div>
 
-                    <!-- FCYC  -->
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <figure class="effect">
-                            <img src="view/images/Projects_FCYC.png" alt="Fulton County Youth Commission" />
+                <!-- CPR Manikin  -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_CPR.jpg" alt="CPR Manikin" />
 
-                            <figcaption>
-                                <h4>Fulton County Youth Commission</h4>
-                                <p>Worked with Fulton County Elected Officials to target key issues like including education & hunger</p>
-                                <a href="https://www.fultoncountyga.gov/services/youth/youth-commission" target="_blank">View more</a>
-                                <span class="icon">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                </span>
-                            </figcaption> 
-                        </figure>
-                    </div>
+                        <figcaption>
+                            <h4>CPR Manikin</h4>
+                            <p>Invented a CPR Manikin to provide real-time feedback to trainees</p>
+                            <a href="https://digitalcommons.northgeorgia.edu/gurc/2019/MasterSchedule/54/" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
+                </div>
+
+            </div>
+            
+            <!-- Passion Projects -->
+            <div class="row">
+                <h3><p style="text-align: center">Passion Projects</p></h3> <br>
+
+                <!-- Posters at the Capitol  -->
+                <!--
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_Capitol.png" alt="Posters at the Capitol" />
+
+                        <figcaption>
+                            <h4>Posters at the Capitol</h4>
+                            <p>Chosen to present my research to State Congressional Representatives </p>
+                            <a href="https://www.georgiainventureprize.org/2020competition" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
+                </div> -->
+
+                <!-- TedX Talk -->
+                <div class="col-md-4  col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_TED.jpg" alt="Ted Talk" />
+
+                        <figcaption>
+                            <h4>TedX Talk</h4>
+                            <p>Presented about my nonprofit at the Atlanta Beltline TedX</p>
+                            <a href="https://www.youtube.com/watch?v=tAbsvshIGk8" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
+                </div>
+
+                <!-- Taido Karate  -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_Taido.jpg" alt="Taido Karate" />
+
+                        <figcaption>
+                            <h4>Taido Karate</h4>
+                            <p>11 years of practicing, learning, and eventually mentoring Taido Karate</p>
+                            <a href="https://www.taidokarate.com" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
+                </div>
+
+                <!-- FCYC  -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <figure class="effect">
+                        <img src="view/images/Projects_FCYC.png" alt="Fulton County Youth Commission" />
+
+                        <figcaption>
+                            <h4>Fulton County Youth Commission</h4>
+                            <p>Worked with Fulton County Elected Officials to target key issues like including education & hunger</p>
+                            <a href="https://www.fultoncountyga.gov/services/youth/youth-commission" target="_blank">View more</a>
+                            <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                            </span>
+                        </figcaption> 
+                    </figure>
                 </div>
             </div>
+        </div>
         
          <!-- Slideshow container -->
         <h3> <p style="text-align: center">See Some Recent Research Highlights Below! </p></h3>
@@ -370,10 +378,13 @@
                     <div class="numbertext">1 / 3</div>
                     <div style="text-align: center;"> 
                         <img src="view/images/Research_Dad_PCA.jpeg" style="height:50%;width:50%">
-                      </div>
-                    <div class="captionText">
-                        <b>Figure 2. FDA approach toward predictive functional clustering.</b> <br>
-                        Kumar, V., Sood, A., Gupta, S., & Sood, N. (2021). Prevention- Versus Promotion-Focus Regulatory Efforts on the Disease Incidence and Mortality of COVID-19: A Multinational Diffusion Study Using Functional Data Analysis. Journal of International Marketing, 29(1), 1–22. https://doi.org/10.1177/1069031X20966563
+                    </div>
+                    <div style = "text-align: center; width:50%; margin: 0 auto">
+                        <b>Figure 2. FDA approach toward predictive functional clustering.</b> <br> 
+                        <div style="text-align:center; font-size:13px; color:gray"> 
+                            <b>Prevention vs. Promotion-Focus Regulatory Efforts on the Disease Incidence and Mortality of COVID-19: A Multinational Diffusion Study using Functional Data Analysis</b> <br> 
+                            Vikas K, Ashish S, Shaphali G, <u>Nitish S</u>. <br> 
+                            Journal of International Marketing. October 2020. doi: <a href="https://journals.sagepub.com/doi/abs/10.1177/1069031X20966563" target ="_blank">10.1177/1069031X20966563</a> </div>
                     </div>
                   </div>
 
@@ -382,8 +393,12 @@
                     <div style="text-align: center;"> 
                         <img src="view/images/Research_ECPR.png" style="height:50%;width:50%">
                       </div>
-                    <div class="captionText"><b>Supplemental Figure 3. Overall survival (A) Results of pooled survival analysis (B) Funnel plot with Egger’s test</b> <br>
-                        Sood, Nitish BS,; Sangari, Anish BS; Goyal, Arnav BS; Conway, J. Arden S. MD. Predictors of survival for pediatric extracorporeal cardiopulmonary resuscitation: A systematic review and meta-analysis. Medicine 101(39):p e30860, September 30, 2022. | DOI: 10.1097/MD.0000000000030860 
+                    <div style = "text-align: center; width:50%; margin: 0 auto">
+                        <b>Supplemental Figure 3A. Results of pooled survival analysis </b> <br> 
+                        <div style="text-align:center; font-size:13px; color:gray"> 
+                            <b>Predictors of Survival for Pediatric Extracorporeal Cardiopulmonary Resuscitation: A Systematic Review and Meta-analysis</b><br>
+                            <u>Sood N</u>, Sangari A, Goyal A, Conway JA. <br>
+                            Medicine. October 2022. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/36181012/" target="_blank">36181012</a> </div> 
                     </div>
                   </div>
 
@@ -392,18 +407,24 @@
                     <div style="text-align: center;"> 
                         <img src="view/images/Research_Ophtho_Marcus.png" style="height:50;width:50%">
                       </div>
-                    <div class="captionText"> <b>Figure 2. BCVA changes over 152 weeks. </b> <br>
-                        Kasetty, V; Starnes, D; Sood, N; Qin, L; Moses, M; Frazier, H; Singh, H; Marcus, D. Complications, Compliance and 3-Year Outcomes after Endolaserless Vitrectomy with Aflibercept Monotherapy for Proliferative Diabetic Retinopathy-Related Vitreous Hemorrhage. OSLI Retina. Published ahead of print.
+                    <div style = "text-align: center; width:50%; margin: 0 auto">
+                        <b>Figure 2. BCVA changes over 152 weeks. </b> <br>
+                        <div style="text-align: center; font-size:13px; color:gray"> 
+                            <b>Complications, Compliance and 3-Year Outcomes after Endolaserless Vitrectomy with Aflibercept Monotherapy for Proliferative Diabetic Retinopathy-Related Vitreous Hemorrhage</b> <br>
+                            V Kasetty, D Starnes, M Moses, <u>N Sood</u>, et al. <br> 
+                            Published ahead of print at OSLI Retina. </div>
                     </div>
                   </div>
         </div>
         
+        <!-- Gray dots below slideshow -- problem is that they cannot be used to click through the slides and they don't turn black when the slide is on them 
         <div style="text-align:center">
           <a href="javascript:void(0)" class="dot" onclick="currentSlide(1)" title="slide 1"></a> 
           <a href="javascript:void(0)" class="dot slideractive" onclick="currentSlide(2)" title="slide 2"></a> 
           <a href="javascript:void(0)" class="dot" onclick="currentSlide(3)" title="slide 3"></a> 
           <a href="javascript:void(0)" class="dot" onclick="currentSlide(4)" title="slide 4"></a> 
         </div>
+        -->
         
         <script>
             let slideIndex = 0;
@@ -421,6 +442,7 @@
               setTimeout(showSlides, 5000); // Change image every 2 seconds
             } 
         </script>
+        <br>
         
         <!-- Experiences -->
 	   <div class="background-white">	
@@ -428,155 +450,144 @@
             <h2>Experiences</h2>
             <p class="lead">
                 &ldquo;Tell me what you pay attention to and I will tell you who you are.&rdquo;<br />~ José Ortega y Gasset </p>
-            <hr />
+            <hr / style="margin:0px">
 
                 <h3>Education</h3>
-                <div class="experiences">			
-
+                <div class="experiences">	
                     <div class="experience row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h4>Medical College of Georgia</h4>
-                            <p class="experience-period">
-                                Aug 2020 - May 2024 </p>
+                            <span class="experience-details">
+                                <span style="color: gray">4.0 GPA </span> <span class="seperator">|</span> 
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    Augusta	
+                                </span>
+                            </span>
                         </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Medical Student</strong>
-                                <span class="hidden-phone">
-                                    <p> </p>
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                                        Augusta	
-                                    </span>
-                                </span>
-                            </p>
+                        <div class="col-md-8" style="margin-top:10px">    
+                            <strong>Medical Student </strong> 
+                            <span class="experience-period" style="float:right">
+                                Aug 2020 - May 2024 
+                            </span>
                         </div>
                     </div>
                     
                     <div class="experience row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h4>Augusta University</h4>
-                            <p class="experience-period">
-                                Aug 2017 -  May 2020 </p>
+                            <span class="experience-details">
+                                <span style="color: gray">4.0 GPA</span> <span class="seperator">|</span>
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    Augusta	
+                                </span>
+                            </span>
                         </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Bachelor of Science in Cellular & Molecular Biology</strong>
-                                <span class="hidden-phone">
-                                    <p> 4.0 GPA </p>
-                                        <!-- I have a 4.0 GPA and will be graduating Augusta University with a degree in Cellular & Molecular Biology in 3 years. In this time, I've explored medical interests by shadowing various specialities, done research in varying areas including Immunology, Computational Genomics, & Emergency Medicine, and served as Augusta University's representative in state-wide business competitions showcasing products I invented. </p> -->
-                                    <p> Scholarships: Presidential Scholar (Full Scholarship); Coca-Cola Scholar ($20,000); National Merit Scholar; Carson Scholar</p>
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                                        Augusta	</span>
-                                </span>
-                            </p>
+                        <div class="col-md-8" style="margin-top:10px">
+                            <strong>Bachelor of Science in Cellular & Molecular Biology</strong>
+                            <span class="experience-period" style="float:right">
+                                Aug 2017 -  May 2020 </span>
+                                <p> Scholarships: Presidential Scholar (Full Scholarship); Coca-Cola Scholar ($20,000); National Merit Scholar; Carson Scholar</p>
                         </div>
                     </div>
 
                     <div class="experience row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h4>Alpharetta High School</h4>
-                            <p class="experience-period">
-                                Aug 2013 - May 2017 </p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>High School Diploma</strong>
-                                <span class="hidden-phone"> 4.0 GPA
-                                    <!-- I graduated Alpharetta High, where I enjoyed doing science, math, biology and arts. I realized in my second year of school that I wanted to do something in medicine so I began increasing my knowledge of the field through various internships and research. -->				</span>
-                                <span class="experience-details">
-                                    <span class="location">
+                            <span class="experience-details">
+                                <span style="color: gray">4.0 GPA</span> <span class="seperator">|</span> 
+                                <span class="location">
                                         <span class="glyphicon glyphicon-map-marker"></span>
-                                                        Alpharetta	</span>
+                                                        Alpharetta	
                                 </span>
-                            </p>
+                            </span>
+                        </div>
+                        <div class="col-md-8" style="margin-top:10px">
+                            <strong>High School Diploma</strong>
+                            <span class="experience-period" style="float:right">
+                                Aug 2013 - May 2017 </span>                                
                         </div>
                     </div>
 
                 </div>
-                <hr />
+                <hr / style="margin:0px">
 
                 <h3>Social Activism</h3>
                 <div class="experiences">
 
                     <div class="experience row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h4>Feed the Frontlines GA</h4>
-                            <p class="experience-period">
-                                Apr 2020 - Oct 2020 </p>
+                            <span class="experience-details">
+                                <span class="link">
+                                    <span class="glyphicon glyphicon-link"></span>
+                                    <a href="https://FeedtheFrontlinesGA.org/" target="_blank">FeedtheFrontlinesGA.org</a>
+                                </span>
+                                <span class="seperator">|</span>
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                        GA					
+                                </span>
+                            </span>
                         </div>
-                        <div class="col-md-9">
-                            <p>
+                        <div class="col-md-8" style="margin-top:10px">
                                 <strong>Director of Finance</strong>
-                                <span class="hidden-phone">
-                                    Feed the Frontlines GA aims to provide fresh and healthy food to healthcare professionals in hospitals hit hardest by the COVID-19 pandemic. To support local businessnes, all of our meals come from local restaurants. As Director of Finance, I led all fundraising initiatives, oversaw all accounting & economic aspects, and managed a fundraising team.
+                                <span class="experience-period" style="float:right">
+                                Apr 2020 - Oct 2020 </span>
+                                <p>
+                                    Feed the Frontlines GA aims to provide fresh and healthy food to healthcare professionals in hospitals hit hardest by the COVID-19 pandemic. To support local businesses, all of our meals come from local restaurants. As Director of Finance, I led all fundraising initiatives, oversaw all accounting & economic aspects, and managed a fundraising team.
                                     <b>Meals Delivered: </b>6,800+; <b>Raised: </b>~$100,000. Worked with hospitals & restaurants in Atlanta, Athens, Augusta, Macon, Savannah, and Albany.
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        GA					</span>
-                                <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                        <a href="https://FeedtheFrontlinesGA.org/" target="_blank">FeedtheFrontlinesGA.org</a>
-                                    </span>
-                                </span>
-                            </p>
+                                </p>
                         </div>
                     </div>
 
                     <div class="experience row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h4>Working Together for Change</h4>
-                            <p class="experience-period">
-                                2013 - Present </p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Executive Director</strong>
-                                <span class="hidden-phone">
-                                    I co-founded and manage Working Together for Change, a national 501(c)3 nonprofit dedicated to ending homelessness. I manage the operations of chapters across the country, while also running the local activities of the Atlanta chapter.  WTFC has now mobilized 600+ volunteers for 3,000+ homeless over 17,000 service hours!			</span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Atlanta					</span>
-                                <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                        <a href="https://workingtogetherforchange.com/" target="_blank">WorkingTogetherForChange.com/</a>
-                                    </span>
+                            <span class="experience-details">
+                                <span class="link">
+                                    <span class="glyphicon glyphicon-link"></span>
+                                    <a href="https://workingtogetherforchange.com/" target="_blank">WorkingTogetherForChange.com/</a>
                                 </span>
+                                <span class="seperator">|</span>
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    Atlanta					
+                                </span>                                
+                            </span>
+                        </div>
+                        <div class="col-md-8" style = "margin-top:10px">
+                            <strong>Executive Director</strong>
+                            <span class="experience-period" style="float:right">
+                            2013 - Present </span>
+                            <p>
+                                I co-founded and manage Working Together for Change, a national 501(c)3 nonprofit dedicated to ending homelessness. I manage the operations of chapters across the country, while also running the local activities of the Atlanta chapter.  WTFC has now mobilized 600+ volunteers for 3,000+ homeless over 17,000 service hours!
                             </p>
                         </div>
                     </div>
 
                     <div class="experience row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h4>HackStart</h4>
-                            <p class="experience-period">
-                                Jul 2015 - Jul 2017	</p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>
-                                <strong>Co-Founder</strong>
-                                <span class="hidden-phone">
-                                    I co-founded HackStart in order to promote digital literacy among teenagers in Atlanta.	We have fundraised $5,000+, helping 300+ students learn programming from experienced mentors and professionals	</span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Atlanta					</span>
-                                    <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                        <a href="http://HackStart.me/" target="_blank">HackStart.me/</a>
-                                    </span>
+                            <span class="experience-details">
+                                <span class="link">
+                                    <span class="glyphicon glyphicon-link"></span>
+                                    <a href="http://HackStart.me/" target="_blank">HackStart.me/</a>
                                 </span>
+                                <span class="seperator">|</span>
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    Atlanta					
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-md-8" style = "margin-top:10px">
+                            <strong>Co-Founder</strong>
+                            <span class="experience-period" style = "float:right">
+                            Jul 2015 - Jul 2017	</span>
+                            <p>
+                                I co-founded HackStart in order to promote digital literacy among teenagers in Atlanta.	We have fundraised $5,000+, helping 300+ students learn programming from experienced mentors and professionals 
                             </p>
                         </div>
                     </div>	
@@ -719,7 +730,7 @@
                     <!-- <b>First or Second Author</b> -->
                     Predictors of Survival for Pediatric Extracorporeal Cardiopulmonary Resuscitation: A Systematic Review and Meta-analysis<br>
                     <p style="font-size:13px;color:gray"> <u>Sood N</u>, Sangari A, Goyal A, Conway JA. <br>
-                        Medicine. October 2022. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/36181012/" target="_blank">36181012</a> </p> 
+                    Medicine. October 2022. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/36181012/" target="_blank">36181012</a> </p> 
                     
                     Evolution of Intracranial-Intracranial Bypass Surgery: A Bibliometric Analysis<br>
                     <p style="font-size:13px;color:gray"> Reddy VP, Seas A, Sood N, Srinivasan VM, Catapano JS, Lawton MT. <br> World Neurosurg. 2022;162:177-182.e9. doi:10.1016/j.wneu.2022.02.116 </p>
