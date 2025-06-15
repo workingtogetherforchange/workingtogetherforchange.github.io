@@ -18,12 +18,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
 		<meta name="author" content="Working Together for Change" />	
-		<meta name="description" content="Working Together For Change is a national student-led nonprofit dedicated to ending homelessness!" />
-		<meta name="keywords" content="Working Together for Change, WTFC, Aditya Sood, Nitish Sood, atlanta, augusta, alpharetta, georgia, nonprofit, students" />
+		<meta name="description" content="Working Together For Change is a national student-led nonprofit dedicated to ending homelessness through immersion, medical care, and social entrepreneurship programs." />
+		<meta name="keywords" content="Working Together for Change, WTFC, nonprofit organization, end homelessness, student volunteers, homeless assistance, Atlanta, Georgia, medical camps, backpack-a-thon, social entrepreneurship" />
 		<meta name="robots" content="index, follow" />
 		<meta name="revisit-after" content="14 days" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://workingtogetherforchange.com/">
+		<meta property="og:title" content="Working Together for Change - End Homelessness">
+		<meta property="og:description" content="A national student-led nonprofit dedicated to ending homelessness through immersion, medical care, and social entrepreneurship programs.">
+		<meta property="og:image" content="https://workingtogetherforchange.com/view/images/logo.png">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://workingtogetherforchange.com/">
+		<meta property="twitter:title" content="Working Together for Change - End Homelessness">
+		<meta property="twitter:description" content="A national student-led nonprofit dedicated to ending homelessness through immersion, medical care, and social entrepreneurship programs.">
+		<meta property="twitter:image" content="https://workingtogetherforchange.com/view/images/logo.png">
+		
+		<!-- Structured Data -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "NonProfitOrganization",
+		  "name": "Working Together for Change",
+		  "alternateName": "WTFC",
+		  "url": "https://workingtogetherforchange.com",
+		  "logo": "https://workingtogetherforchange.com/view/images/logo.png",
+		  "description": "A national student-led nonprofit dedicated to ending homelessness through immersion, medical care, and social entrepreneurship programs.",
+		  "foundingDate": "2018",
+		  "nonprofitStatus": "NonprofitType",
+		  "taxID": "46-5394918",
+		  "address": {
+		    "@type": "PostalAddress",
+		    "addressRegion": "GA",
+		    "addressCountry": "US"
+		  },
+		  "contactPoint": {
+		    "@type": "ContactPoint",
+		    "email": "wtfc.org@gmail.com",
+		    "contactType": "customer service"
+		  },
+		  "sameAs": [
+		    "https://facebook.com/workingtogetherforchange"
+		  ]
+		}
+		</script>
 			
-		<title>Working Together for Change</title>
+		<title>Working Together for Change - End Homelessness</title>
 		
 		<!-- Bootstrap core CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
@@ -36,8 +79,8 @@
 
 		
 		<!--[if lt IE 9]>
-			<script src="/view/js/html5shiv.js"></script>
-			<script src="/view/js/respond.min.js"></script>
+			<script src="view/js/html5shiv.js"></script>
+			<script src="view/js/respond.min.js"></script>
 		<![endif]-->
 		
 		<!-- Begin Inspectlet Embed Code -->
@@ -57,14 +100,20 @@
 	</head>
 	<body data-spy="scroll" data-target="#navbar-example">	       
         
-        <!-- Front Page -->
-        <div id="top" class="jumbotron" data-src="/view/images/window_rain_animation.gif" data-position="bottom right">
-            <div class="container">
-              <h1>END <br>HOMELESSNESS</h1> <br>
-				 <p class="lead">Millions of families in America don't have homes. <br> Let's fix that together.  
-			</div>
-            <!-- Adds light blue/cyan overlay on top of background picture --> 
-			<!-- <div class="overlay"></div>-->
+        <!-- Modern Hero Section -->
+        <div id="top" class="jumbotron hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">END HOMELESSNESS</h1>
+                <p class="hero-subtitle">Millions of families in America don't have homes.<br>Let's fix that together.</p>
+                <div class="hero-cta">
+                    <a href="#experiences" class="btn btn-primary btn-lg">Learn More</a>
+                    <a href="html/support_us.html" class="btn btn-accent btn-lg">Support Our Mission</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-arrow">↓</span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
         </div>
       
         <!-- Header -->
@@ -73,13 +122,19 @@
             <div class="header-left">
               <!-- Replace 'view/images/logo.png' with your logo image source -->
               <img src="view/images/logo.png" alt="Logo">
-              <a href="https://workingtogetherforchange.com" class="site-title">WORKING TOGETHER<br>FOR CHANGE</a>
+              <a href="index.html" class="site-title">WORKING TOGETHER<br>FOR CHANGE</a>
             </div>
             <nav class="main-header">
               <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="html/who-we-are.html">Who We Are</a></li>
-                <li><a href="html/programs.html">Programs</a></li>
+                <li class="dropdown">
+                  <a href="html/programs.html" class="dropdown-toggle">Programs</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="html/backpack-a-thon.html">Backpack-a-thon</a></li>
+                    <li><a href="html/home-building.html">Home Building</a></li>
+                  </ul>
+                </li>
                 <li><a href="html/support_us.html">Support Us</a></li>
                 <li><a href="html/contact.html">Contact</a></li>
               </ul>
@@ -88,33 +143,15 @@
               <!-- Adjust the href for Donate as needed -->
               <a href="html/support_us.html" class="donate">Donate</a>
             </div>
+            <button class="mobile-menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </header>
       
-        <!-- Navigation Bar on the right -->
-        <!--
-		<nav class="navbar navbar-default" id="navbar-example" role="navigation">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
 
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#profile">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-					<li><a href="#research">Research</a></li>
-                    <li><a href="#abilities">Awards</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-        -->
          
         <!-- Experiences -->
         <div class="background-white">
@@ -124,24 +161,24 @@
               <h2>Working Together For Change</h2> <br>
               <p> At WTFC, we believe that it is critical to think not only of ourselves but also of others. We are a student-led network creating a large student community to help homeless people throughout the United States. There is a lot of work being done by many organizations—but nothing truly led by students. Working Together for Change is a national student-led nonprofit dedicated to helping the homelessnes. </p>
             </div> <br>
-            <!-- Full-width row for the three columns -->
-            <div class="container-fluid">
-              <div class="row equal-height">
-                <div class="col-md-4" style="background-color: #22A39F; color: #fff;">
-                  <h3 style="text-align: center;">IMMERSION</h3>
-                  <p>
+            <!-- Modern Three Pillars Grid -->
+            <div class="container-xl">
+              <div class="grid grid-cols-3 md:grid-cols-1 gap-0">
+                <div class="pillar-card bg-gradient text-white p-xl text-center transition hover:-translate-y-2 hover:shadow-xl">
+                  <h3 class="text-2xl font-bold uppercase mb-lg">IMMERSION</h3>
+                  <p class="text-base leading-relaxed">
                     The Immersion pillar works to provide our volunteers with a more realistic understanding of what it means to experience homelessness firsthand. Our programs bring together students from all backgrounds to help empathize with the homeless rather than just sympathize with them.
                   </p>
                 </div>
-                <div class="col-md-4" style="background-color: #284454; color: #fff;">
-                  <h3 style="text-align: center;">MEDICAL</h3>
-                  <p>
+                <div class="pillar-card text-white p-xl text-center transition hover:-translate-y-2 hover:shadow-xl" style="background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));">
+                  <h3 class="text-2xl font-bold uppercase mb-lg">MEDICAL</h3>
+                  <p class="text-base leading-relaxed">
                     Homeless men and women are more likely than the average person to get sick. That's why we place heavy emphasis on our medical initiative. Several times throughout the year, we set up health camps and/or hold fairs in various locations throughout Georgia.
                   </p>
                 </div>
-                <div class="col-md-4" style="background-color: #22A39F; color: #fff;">
-                  <h3 style="text-align: center;">ENTREPRENEURSHIP</h3>
-                  <p>
+                <div class="pillar-card bg-gradient text-white p-xl text-center transition hover:-translate-y-2 hover:shadow-xl">
+                  <h3 class="text-2xl font-bold uppercase mb-lg">ENTREPRENEURSHIP</h3>
+                  <p class="text-base leading-relaxed">
                     Social entrepreneurship is the implementation of sustainable, community-based solutions aimed at ending homelessness one person at a time. We provide scholarships, job training, and opportunities to start and manage local businesses.
                   </p>
                 </div>
@@ -150,48 +187,62 @@
           </div>
         </div>
         
-        <!-- Our Events -->
-        s<div id="projects" class="container">
-          <h2>OUR STATISTICS</h2>
-          <div class="row events-row">
-            <!-- Event 1 -->
-            <div class="col-md-4 event-item">
-              <img src="view/images/VolunteersMobilized.jpg" alt="Volunteers building home" class="img-responsive" />
-              <div class="event-stat">
-                <p>600+<br>Volunteers<br>Mobilized</p>
+        <!-- Modern Statistics Section -->
+        <section id="projects" class="stats-section py-3xl">
+          <div class="container">
+            <h2 class="text-center mb-2xl">OUR IMPACT</h2>
+            <div class="stats-grid">
+              <!-- Stat 1 -->
+              <div class="stat-item">
+                <img src="view/images/VolunteersMobilized.jpg" alt="Volunteers building home" class="stat-image" />
+                <div class="stat-content">
+                  <span class="stat-number">600</span>
+                  <div class="stat-label">Volunteers Mobilized</div>
+                  <div class="stat-description">Passionate students making a difference</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Event 2 -->
-            <div class="col-md-4 event-item">
-              <img src="view/images/HomelessPeopleHelped.png" alt="Child coloring" class="img-responsive" />
-              <div class="event-stat" style="background-color: #284454">
-                <p>3,000+<br>People<br>Helped</p>
+              <!-- Stat 2 -->
+              <div class="stat-item">
+                <img src="view/images/HomelessPeopleHelped.png" alt="Child coloring" class="stat-image" />
+                <div class="stat-content">
+                  <span class="stat-number">3000</span>
+                  <div class="stat-label">People Helped</div>
+                  <div class="stat-description">Lives touched through our programs</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Event 3 -->
-            <div class="col-md-4 event-item">
-              <img src="view/images/ServiceHours.png" alt="Volunteers running" class="img-responsive" />
-              <div class="event-stat">
-                <p>17,000+<br>Volunteer<br>Hours</p>
+              <!-- Stat 3 -->
+              <div class="stat-item">
+                <img src="view/images/ServiceHours.png" alt="Volunteers running" class="stat-image" />
+                <div class="stat-content">
+                  <span class="stat-number">17000</span>
+                  <div class="stat-label">Volunteer Hours</div>
+                  <div class="stat-description">Dedicated time to ending homelessness</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         
-        <!-- Parallax banner image -->
-        <div class="parallax-banner">
-          <div class="banner-content">
-            <h1>GIVE TODAY TO HELP END HOMELESSNESS</h1>
-            <a href="https://endhomelessness.org/how-to-get-help-experiencing-homelssness/" class="btn-local-resources">Local Resources</a>
+        <!-- Modern Call-to-Action Banner -->
+        <section class="cta-banner py-3xl text-center text-white relative overflow-hidden">
+          <div class="container">
+            <h2 class="text-4xl font-black uppercase mb-xl">Give Today to Help End Homelessness</h2>
+            <div class="flex justify-center gap-lg flex-wrap">
+              <a href="html/support_us.html" class="btn btn-accent btn-lg">Donate Now</a>
+              <a href="https://endhomelessness.org/how-to-get-help-experiencing-homelssness/" class="btn btn-outline btn-lg">Local Resources</a>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <!-- Charity Banner -->
-        <div class="charity-banner">
-          <p>Registered Charity Number : 46-5394918</p>
-        </div>
+        <!-- Footer Info -->
+        <footer class="bg-dark text-white py-lg text-center">
+          <div class="container">
+            <p class="text-sm opacity-75">Registered Charity Number: 46-5394918</p>
+            <p class="text-xs opacity-50 mt-sm">© 2024 Working Together for Change. All rights reserved.</p>
+          </div>
+        </footer>
 
         <div class="modal fade" id="upgrade-dialog" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -214,16 +265,15 @@
             <script type="text/javascript" src="view/js/script.js"></script>
             <script type="text/javascript" src="view/js/bootstrap.min.js"></script>
 
-            <!-- Google Analytics -->
-            <script type="text/javascript">
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-3361587-8']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+            <!-- Google Analytics - Update with your GA4 tracking ID -->
+            <!-- 
+            <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'GA_MEASUREMENT_ID');
             </script>
+            -->
 	</body>
 </html>

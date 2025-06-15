@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-script-type" content="text/javascript" />
+		<meta http-equiv="content-style-type" content="text/css" />
+		<!-- <meta http-equiv="content-language" content="nl" /> -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Working Together for Change" />	
+		<meta name="description" content="Working Together For Change is a national student-led nonprofit dedicated to ending homelessness!" />
+		<meta name="keywords" content="Working Together for Change, WTFC, Aditya Sood, Nitish Sood, atlanta, augusta, alpharetta, georgia, nonprofit, students" />
+		<meta name="robots" content="index, follow" />
+		<meta name="revisit-after" content="14 days" />
+			
+		<title>Home Building - Working Together for Change</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+		<link href="../view/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../view/style.css" rel="stylesheet" />
+		
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+		
+		<!--[if lt IE 9]>
+			<script src="../view/js/html5shiv.js"></script>
+			<script src="../view/js/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Begin Inspectlet Embed Code -->
+		<script type="text/javascript" id="inspectletjs">
+			window.__insp = window.__insp || [];
+			__insp.push(['wid', 92785244]);
+			(function() {
+				function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+				if (window.attachEvent){
+					window.attachEvent('onload', __ldinsp);
+				}else{
+					window.addEventListener('load', __ldinsp, false);
+				}
+			})();    
+		</script>
+		<!-- End Inspectlet Embed Code -->
+	</head>
+	<body data-spy="scroll" data-target="#navbar-example">	       
+        
+        <!-- Header -->
+        <header>
+          <div class="header-container">
+            <div class="header-left">
+              <img src="../view/images/logo.png" alt="Logo">
+              <a href="../index.html" class="site-title">WORKING TOGETHER<br>FOR CHANGE</a>
+            </div>
+            <nav class="main-header">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="who-we-are.html">Who We Are</a></li>
+                <li class="dropdown">
+                  <a href="programs.html" class="dropdown-toggle">Programs</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="backpack-a-thon.html">Backpack-a-thon</a></li>
+                    <li><a href="home-building.html">Home Building</a></li>
+                  </ul>
+                </li>
+                <li><a href="support_us.html">Support Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="header-right">
+              <a href="support_us.html" class="donate">Donate</a>
+            </div>
+            <button class="mobile-menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-container">
+          <div class="container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="support_us.html">Support Us</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home Building</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="background-white">
+          <div class="container">
+            
+            <!-- Hero Section with Carousel -->
+            <section class="homebuilding-hero">
+              <div class="hero-carousel">
+                <div class="carousel-container">
+                  <!-- Carousel slides -->
+                  <div class="carousel-slide active">
+                    <img src="../view/images/HomeBuildingHeader_edited.png" alt="Home Building Program Header" class="carousel-image">
+                    <div class="carousel-overlay">
+                      <h1 class="hero-title">HOME BUILDING</h1>
+                      <p class="hero-subtitle">Building Hope, One Home at a Time</p>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-slide">
+                    <img src="../view/images/Homebuilding.png" alt="Home Building in Progress" class="carousel-image">
+                    <div class="carousel-overlay">
+                      <h1 class="hero-title">COMMUNITY IMPACT</h1>
+                      <p class="hero-subtitle">Transforming Lives Through Action</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Add more slides as needed -->
+                  <div class="carousel-slide">
+                    <img src="../view/images/HomeBuildingHeader_edited.png" alt="Volunteers at Work" class="carousel-image">
+                    <div class="carousel-overlay">
+                      <h1 class="hero-title">VOLUNTEER POWER</h1>
+                      <p class="hero-subtitle">Together We Build Dreams</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Navigation arrows -->
+                  <button class="carousel-nav prev" onclick="changeSlide(-1)">
+                    <span>&#8249;</span>
+                  </button>
+                  <button class="carousel-nav next" onclick="changeSlide(1)">
+                    <span>&#8250;</span>
+                  </button>
+                  
+                  <!-- Dots indicator -->
+                  <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Program Overview -->
+            <section class="program-overview py-3xl">
+              <div class="grid grid-cols-2 gap-lg md:grid-cols-1">
+                
+                <!-- Building a Home -->
+                <div class="program-section">
+                  <h2 class="section-title">Building a Home</h2>
+                  <div class="section-content">
+                    <p>The Silicon Valley Chapter of WTFC went to Mexico to build a house for a family. Over the course of four days, we traveled down to Tijuana, built a home, and settled a family in it. This year, we join 10 families from Aug. 12th– 15th to make this house a reality for a family.</p>
+                  </div>
+                </div>
+
+                <!-- Our Plan -->
+                <div class="program-section">
+                  <h2 class="section-title">Our Plan</h2>
+                  <div class="section-content">
+                    <p>All lodging, food, and local transportation costs are shared among all the participants.</p>
+                    <p>In 4 days, we complete building the entire house from cutting wood, building walls, painting, decorating, and furnishing!</p>
+                    <p>The best part is the giant smile on the faces of the family and the children!</p>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Cost Breakdown -->
+            <section class="cost-breakdown py-3xl bg-secondary">
+              <div class="container">
+                <h2 class="section-title text-center text-white mb-xl">Cost Breakdown</h2>
+                <div class="cost-table">
+                  <div class="cost-item">
+                    <span class="cost-description">Building materials and shipment</span>
+                    <span class="cost-amount">$4,701</span>
+                  </div>
+                  <div class="cost-item">
+                    <span class="cost-description">Cement Slab for the house</span>
+                    <span class="cost-amount">$460</span>
+                  </div>
+                  <div class="cost-item">
+                    <span class="cost-description">Cement, Rebar, and other materials</span>
+                    <span class="cost-amount">$200</span>
+                  </div>
+                  <div class="cost-item">
+                    <span class="cost-description">Volunteer housing</span>
+                    <span class="cost-amount">$750</span>
+                  </div>
+                  <div class="cost-item">
+                    <span class="cost-description">Guide, travel, and truck rental</span>
+                    <span class="cost-amount">$1,000</span>
+                  </div>
+                  <div class="cost-item">
+                    <span class="cost-description">Food for 30 people for 4 days</span>
+                    <span class="cost-amount">$1,000</span>
+                  </div>
+                  <div class="cost-item cost-total">
+                    <span class="cost-description">Total</span>
+                    <span class="cost-amount">$8,111</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section py-3xl text-center">
+              <h2 class="mb-lg">Ready to Make a Difference?</h2>
+              <p class="lead mb-xl">Join us in building homes and changing lives. Every contribution helps make a family's dream come true.</p>
+              <a href="support_us.html" class="btn btn-primary btn-lg">Support Our Mission</a>
+            </section>
+
+          </div>
+        </div>
+        
+        <!-- Charity Banner -->
+        <div class="charity-banner">
+          <p>Registered Charity Number : 46-5394918</p>
+        </div>
+
+        <div class="modal fade" id="upgrade-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Your browser is out of date</h4>
+                </div>
+                <div class="modal-body">
+                    <p>To get the best possible experience using our site we recommend that you upgrade to a modern web browser. To download a newer web browser click on the Upgrade button.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://browsehappy.com/" target="_blank" class="btn btn-primary">Upgrade</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+        </div> 
+      <!-- /.modal -->		
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script type="text/javascript" src="../view/js/script.js"></script>
+            <script type="text/javascript" src="../view/js/bootstrap.min.js"></script>
+            
+            <!-- Carousel JavaScript -->
+            <script type="text/javascript">
+              let currentSlideIndex = 0;
+              const slides = document.querySelectorAll('.carousel-slide');
+              const dots = document.querySelectorAll('.dot');
+              const totalSlides = slides.length;
+              let autoPlayInterval;
+
+              function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => {
+                  slide.classList.remove('active', 'prev');
+                });
+                
+                // Remove active class from all dots
+                dots.forEach(dot => {
+                  dot.classList.remove('active');
+                });
+                
+                // Show current slide
+                slides[index].classList.add('active');
+                dots[index].classList.add('active');
+                
+                // Add prev class to previous slide for animation
+                const prevIndex = (index - 1 + totalSlides) % totalSlides;
+                slides[prevIndex].classList.add('prev');
+              }
+
+              function changeSlide(direction) {
+                currentSlideIndex += direction;
+                
+                if (currentSlideIndex >= totalSlides) {
+                  currentSlideIndex = 0;
+                } else if (currentSlideIndex < 0) {
+                  currentSlideIndex = totalSlides - 1;
+                }
+                
+                showSlide(currentSlideIndex);
+                resetAutoPlay();
+              }
+
+              function currentSlide(index) {
+                currentSlideIndex = index - 1;
+                showSlide(currentSlideIndex);
+                resetAutoPlay();
+              }
+
+              function nextSlide() {
+                changeSlide(1);
+              }
+
+              function startAutoPlay() {
+                autoPlayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+              }
+
+              function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+              }
+
+              function resetAutoPlay() {
+                stopAutoPlay();
+                startAutoPlay();
+              }
+
+              // Initialize carousel
+              document.addEventListener('DOMContentLoaded', function() {
+                showSlide(0);
+                startAutoPlay();
+                
+                // Pause auto-play on hover
+                const carousel = document.querySelector('.hero-carousel');
+                if (carousel) {
+                  carousel.addEventListener('mouseenter', stopAutoPlay);
+                  carousel.addEventListener('mouseleave', startAutoPlay);
+                }
+              });
+
+              // Touch/swipe support for mobile
+              let touchStartX = 0;
+              let touchEndX = 0;
+
+              function handleTouchStart(e) {
+                touchStartX = e.changedTouches[0].screenX;
+              }
+
+              function handleTouchEnd(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+              }
+
+              function handleSwipe() {
+                if (touchEndX < touchStartX - 50) {
+                  changeSlide(1); // Swipe left - next slide
+                }
+                if (touchEndX > touchStartX + 50) {
+                  changeSlide(-1); // Swipe right - previous slide
+                }
+              }
+
+              // Add touch event listeners
+              document.addEventListener('DOMContentLoaded', function() {
+                const carousel = document.querySelector('.hero-carousel');
+                if (carousel) {
+                  carousel.addEventListener('touchstart', handleTouchStart, { passive: true });
+                  carousel.addEventListener('touchend', handleTouchEnd, { passive: true });
+                }
+              });
+            </script>
+
+            <!-- Google Analytics -->
+            <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-3361587-8']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+            </script>
+	</body>
+</html> 

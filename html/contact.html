@@ -1,6 +1,4 @@
-<!-- TODO
-- Clean up text 
--->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,21 +15,21 @@
 		<meta name="robots" content="index, follow" />
 		<meta name="revisit-after" content="14 days" />
 			
-		<title>Working Together for Change</title>
+		<title>Contact Us - Working Together for Change</title>
 		
 		<!-- Bootstrap core CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
 		<link href="../view/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="../view/style.css" rel="stylesheet" />
 		
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
 		
 		<!--[if lt IE 9]>
-			<script src="/view/js/html5shiv.js"></script>
-			<script src="/view/js/respond.min.js"></script>
+			<script src="../view/js/html5shiv.js"></script>
+			<script src="../view/js/respond.min.js"></script>
 		<![endif]-->
 		
 		<!-- Begin Inspectlet Embed Code -->
@@ -56,13 +54,19 @@
           <div class="header-container">
             <div class="header-left">
               <img src="../view/images/logo.png" alt="Logo">
-              <a href="https://workingtogetherforchange.com" class="site-title">WORKING TOGETHER<br>FOR CHANGE</a>
+              <a href="../index.html" class="site-title">WORKING TOGETHER<br>FOR CHANGE</a>
             </div>
             <nav class="main-header">
               <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="who-we-are.html">Who We Are</a></li>
-                <li><a href="programs.html">Programs</a></li>
+                <li class="dropdown">
+                  <a href="programs.html" class="dropdown-toggle">Programs</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="backpack-a-thon.html">Backpack-a-thon</a></li>
+                    <li><a href="home-building.html">Home Building</a></li>
+                  </ul>
+                </li>
                 <li><a href="support_us.html">Support Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
@@ -70,6 +74,11 @@
             <div class="header-right">
               <a href="support_us.html" class="donate">Donate</a>
             </div>
+            <button class="mobile-menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </header>
           
@@ -104,7 +113,7 @@
 
                 <!-- Right: Contact Form -->                
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <div class="contact-info" style="text-align: center; !important"><p>Alternatively, send us a message via our website!</p></div>
+                    <div class="contact-info" style="text-align: center !important;"><p>Alternatively, send us a message via our website!</p></div>
                     <input type="hidden" name="access_key" value="db109579-8f7e-4cee-b099-9eda6ae8eebd">
                     <input type="text" name="name" placeholder="Name *" required>
                     <input type="email" name="email" placeholder="Email *" required>

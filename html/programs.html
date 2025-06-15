@@ -1,6 +1,3 @@
-<!-- TODO
--->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -17,21 +14,21 @@
 		<meta name="robots" content="index, follow" />
 		<meta name="revisit-after" content="14 days" />
 			
-		<title>Working Together for Change</title>
+		<title>Our Programs - Working Together for Change</title>
 		
 		<!-- Bootstrap core CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
 		<link href="../view/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="../view/style.css" rel="stylesheet" />
 		
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
 		
 		<!--[if lt IE 9]>
-			<script src="/view/js/html5shiv.js"></script>
-			<script src="/view/js/respond.min.js"></script>
+			<script src="../view/js/html5shiv.js"></script>
+			<script src="../view/js/respond.min.js"></script>
 		<![endif]-->
 		
 		<!-- Begin Inspectlet Embed Code -->
@@ -56,13 +53,19 @@
           <div class="header-container">
             <div class="header-left">
               <img src="../view/images/logo.png" alt="Logo">
-              <a href="https://workingtogetherforchange.com" class="site-title">WORKING TOGETHER<br>FOR CHANGE</a>
+              <a href="../index.html" class="site-title">WORKING TOGETHER<br>FOR CHANGE</a>
             </div>
             <nav class="main-header">
               <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="who-we-are.html">Who We Are</a></li>
-                <li><a href="programs.html">Programs</a></li>
+                <li class="dropdown">
+                  <a href="programs.html" class="dropdown-toggle">Programs</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="backpack-a-thon.html">Backpack-a-thon</a></li>
+                    <li><a href="home-building.html">Home Building</a></li>
+                  </ul>
+                </li>
                 <li><a href="support_us.html">Support Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
@@ -70,6 +73,11 @@
             <div class="header-right">
               <a href="support_us.html" class="donate">Donate</a>
             </div>
+            <button class="mobile-menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </header>
         
@@ -98,67 +106,41 @@
               </div>
             </div>
             
-            <!-- Event boxes --> 
-            <div class="medical-subsections">
-              <div class="medical-box dark-box">
-                <div class="medical-text">F U N<br>F R I D A Y S</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We recognize youth in poverty too often can't afford to go out for a great Friday. So, we bring the fun to them! Movies, frisbee, and cards are fair game for Fun Fridays! </p>
+            <!-- New Modern Grid Layout -->
+            <div class="programs-grid">
+              <div class="program-item immersion">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Fun Fridays</h3>
+                  <p class="program-description">We recognize youth in poverty too often can't afford to go out for a great Friday. So, we bring the fun to them! Movies, frisbee, and cards are fair game for Fun Fridays!</p>
+                </div>
               </div>
-              <div class="medical-box light-box">
-                <div class="medical-text">B A C K P A C K - <BR> A - T H O N</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We collect used backpacks, fund-raise for food, water, clothes, and supply kits, ​and distribute backpacks in-person. </p>
+              
+              <div class="program-item immersion">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Backpack-a-thon</h3>
+                  <p class="program-description">We collect used backpacks, fund-raise for food, water, clothes, and supply kits, and distribute backpacks in-person.</p>
+                </div>
+              </div>
+              
+              <div class="program-item immersion">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">PenPal</h3>
+                  <p class="program-description">We connect students at elementary schools with youth at Rainbow Village, working to eliminate stigma by setting them up as pen pals!</p>
+                </div>
+              </div>
+              
+              <div class="program-item immersion">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Face-to-Face</h3>
+                  <p class="program-description">We take students and adults to shelters like StandUp for Kids to talk to young and elderly homeless.</p>
+                </div>
               </div>
             </div>
-            <div class="medical-subsections">
-              <div class="medical-box light-box">
-                <div class="medical-text">P E N P A L</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We connect students at elementary schools with youth at Rainbow Village, working to eliminate stigma by setting them up as pen pals! </p>
-              </div>
-              <div class="medical-box dark-box">
-                <div class="medical-text">F A C E - T O - F A C E</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We take students and adults to shelters like StandUp for Kids to talk to young and elderly homeless. </p>
-              </div>
-            </div>
           </div>
-          <!-- <div class="static-boxes-container">
-          <div class="static-box">
-            <h3>PenPal</h3>
-            <p>We connect students at elementary schools with youth at Rainbow Village, working to eliminate stigma by setting them up as pen pals!</p>
-          </div>
-          <div class="static-box">
-            <h3>Face-to-Face</h3>
-            <p>We take students and adults to shelters like StandUp for Kids to talk to young and elderly homeless.</p>
-          </div>
-          <div class="static-box">
-            <h3>Bag-a-thon</h3>
-            <p>We collect used backpacks, fund-raise for food, water, clothes, and supply kits, and distribute backpacks in-person.</p>
-          </div>
-
-          <div class="static-box">
-            <h3>Fun Friday</h3>
-            <p>We recognize youth in poverty too often can't afford to go out for a great Friday. So, we bring the fun to them! Movies, cricket, and cards are fair game for Fun Fridays!</p>
-          </div>
-          <div class="static-box">
-            <h3>PenPal</h3>
-            <p>We connect students at elementary schools with youth at Rainbow Village, working to eliminate stigma by setting them up as pen pals!</p>
-          </div>
-          <div class="static-box">
-            <h3>And more!</h3>
-            <p>This is just a small list of what we do!</p>
-          </div>
-        </div> -->
         </div>
         
         <!-- Medical Pillar -->
@@ -172,25 +154,26 @@
                 <div class="white-line right-line"></div>
                 <div class="white-line bottom-line"></div>
               <div class="overlay-text-bottom">
-                Homeless men and women are four times more likely than the average person to get sick. That’s why we place major emphasis on our medical initiatives. Several times throughout the year, we set up health camps and medical fairs in various locations throughout Georgia.
+                Homeless men and women are four times more likely than the average person to get sick. That's why we place major emphasis on our medical initiatives. Several times throughout the year, we set up health camps and medical fairs in various locations throughout Georgia.
               </div>
             </div>    
-            <div class="medical-subsections">
-              <div class="medical-box dark-box">
-                <div class="medical-text">M E D I C A L<br>C A M P S</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We partner with organizations including the Iron Men's and Safe House Outreach to provide limited free medical screening exams.
-                </p>
+            
+            <!-- New Modern Grid Layout -->
+            <div class="programs-grid">
+              <div class="program-item medical">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Medical Camps</h3>
+                  <p class="program-description">We partner with organizations including the Iron Men's and Safe House Outreach to provide limited free medical screening exams.</p>
+                </div>
               </div>
-              <div class="medical-box light-box">
-                <div class="medical-text">H E A L T H<br>E D U C A T I O N</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We organize health education seminars from medical educators on topics including HIV, diabetes, heart disease, and mental health to hundreds.
-                </p>
+              
+              <div class="program-item medical">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Health Education</h3>
+                  <p class="program-description">We organize health education seminars from medical educators on topics including HIV, diabetes, heart disease, and mental health to hundreds.</p>
+                </div>
               </div>
             </div>
           </div>  
@@ -211,37 +194,38 @@
               </div>
             </div>
             
-            <!-- Event boxes --> 
-            <div class="medical-subsections">
-              <div class="medical-box dark-box">
-                <div class="medical-text">J O B<br>T R A I N I N G</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We partner with organizations like United Way to host job training seminars for resume formatting, free professional attire, and interview preparation.
+            <!-- New Modern Grid Layout -->
+            <div class="programs-grid">
+              <div class="program-item entrepreneurship">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Job Training</h3>
+                  <p class="program-description">We partner with organizations like United Way to host job training seminars for resume formatting, free professional attire, and interview preparation.</p>
+                </div>
               </div>
-              <div class="medical-box light-box">
-                <div class="medical-text">S C H O L A R - <br> S H I P S</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We worked with Kennesaw State University to provide fundraising to at-risk youth enrolled in 2- or 4- year degree programs. </p>
+              
+              <div class="program-item entrepreneurship">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Scholarships</h3>
+                  <p class="program-description">We worked with Kennesaw State University to provide fundraising to at-risk youth enrolled in 2- or 4- year degree programs.</p>
+                </div>
               </div>
-            </div>
-            <div class="medical-subsections">
-              <div class="medical-box light-box">
-                <div class="medical-text">Y O U T H<br>S U M M I T S</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We host summits for student-led nonprofits to connect, network, and create partnerships for long-term projects. </p>
+              
+              <div class="program-item entrepreneurship">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Youth Summits</h3>
+                  <p class="program-description">We host summits for student-led nonprofits to connect, network, and create partnerships for long-term projects.</p>
+                </div>
               </div>
-              <div class="medical-box dark-box">
-                <div class="medical-text">H A C K A T H O N S</div>
-                <div class="line-top"></div>
-                <div class="line-bottom"></div>
-                <p class="medical-subtext">
-                  We help organize 24- or 48-hour workshops to create innovative solutions to existing social problems. </p>
+              
+              <div class="program-item entrepreneurship">
+                <div class="program-content">
+                  <div class="program-accent"></div>
+                  <h3 class="program-title">Hackathons</h3>
+                  <p class="program-description">We help organize 24- or 48-hour workshops to create innovative solutions to existing social problems.</p>
+                </div>
               </div>
             </div>
           </div>    
